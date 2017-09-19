@@ -38,11 +38,15 @@ function checkAnswer () { //essa função verifica se a resposta está certa
 
 	if (isCorrect != true) {
 		for (i = 0; i < guessedAnswers.length; i++) {
-			if (guess == guessedAnswers[i]){
-				var isRepeated = true;
+			for (j = 0; j < guessedAnswers[i].name.length; j++){
+				let answerBeingChecked = normalize(guessedAnswers[i].name[j]);
+					if (guess == answerBeingChecked){
+					repeatedName = guessedAnswers[i].name[j];
+					var isRepeated = true;
+				}
 			}
 		}
-		isRepeated ? feedbackTxt= 'You alredy guessed that one!' : feedbackTxt = 'Incorrect answer';
+		isRepeated ? feedbackTxt= `You alredy guessed ${repeatedName}` : feedbackTxt = 'Incorrect answer';
 	}
 
 	updateCounter();
@@ -70,8 +74,10 @@ function clearInput() {
 }
 
 function transferDrag(position){
-let dragTransfer = correctAnswers.splice(position,1); //tira do array de respostas que falta
-guessedAnswers.push(dragTransfer); //e coloca no array de respostas acertadas
+	let dragTransfer = correctAnswers.splice(position,1); //tira do array de respostas que falta
+	guessedAnswers.push(dragTransfer[0]); //e coloca no array de respostas acertadas
+	console.log(correctAnswers);
+	console.log(guessedAnswers);
 }
 
 
