@@ -10,21 +10,23 @@
   <title>Guess the name</title>
 </head>
 
-<body>
+<body onload="start()">
 
 <div id="input">
 	<p>Guess the name<p>	
-
-	<form id="form">
-		<input type="text" name="guessInput" value="Guess here">
-	</form>
-
-	<p id="feedback"></p>
+	<input id="textBox" type="text" value="Guess here" onkeypress ="keyPressed(event)">
 	<button onclick="checkAnswer()">Submit</button>
-	
 </div> 
 
+<div id="feedback"></div>
+
+<br>
+
 <div id="answers">
+	<p> Guessed answers: </p>
+	<p id="answerCounter"></p>
+	<p id="guessedAnswers"></p>
+
 </div><div>
 
   <script type="text/javascript" src="guessing.js"></script>
