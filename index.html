@@ -1,35 +1,28 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="main.css" type="text/css" rel="stylesheet">
-  <title>Guess the name</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="main.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<title>Guess the name</title>
 </head>
 
 <body onload="start()">
-
-<div id="input">
-	<p>Guess the name<p>	
-	<input id="textBox" type="text" value="Guess here" onkeypress ="keyPressed(event)">
-	<button onclick="checkAnswer()">Submit</button>
-</div> 
-
-<div id="feedback"></div>
-
-<br>
-
-<div id="answers">
-	<p> Guessed answers: </p>
-	<p id="answerCounter"></p>
-	<p id="guessedAnswers"></p>
-
-</div><div>
-
-  <script type="text/javascript" src="guessing.js"></script>
+	<div id="input">
+		<h1>Guess the name</h1>	
+		<input id="textBox" type="text" value="Type then press enter" onkeypress ="keyPressed(event)" onclick="clearInput()">
+		<button onclick="checkAnswer()">Submit</button>
+	</div> 
+	<div id="feedback"></div>
+	<br>
+	<div id="answers">
+		<h1> Guessed answers: </h1>
+		<p id="answerCounter"></p>
+		<p id="guessedAnswers"></p>
+	</div>
+	<script type="text/javascript" src="arrays.js"></script>
+	<script type="text/javascript" src="guessing.js"></script>
 </body>
-
 </html>

@@ -1,115 +1,3 @@
-var correctAnswers = [
-'acidbetty',
-'adoredelano',
-'akashia',
-'alaska',
-'alexismateo',
-'alisasummers',
-'alyssaedwards',
-'aprilcarrion',
-'bebezaharabenet',
-'bendelacreme',
-'biancadelrio',
-'bobthedragqueen',
-'carmencarrera',
-'chadmichaels',
-'chichidevayne',
-'cocomontrese',
-'courtneyact',
-'cynthialeefontaine',
-'dariennelake',
-'daxexclamationpoint',
-'deltawork',
-'derrickbarry',
-'detox',
-'didaritz',
-'giagunn',
-'gingerminj',
-'honeymahogany',
-'indiaferrah',
-'ivywinters',
-'jade',
-'jadejolie',
-'jaidynndiorefierce',
-'jasminemasters',
-'jessicawild',
-'jigglycaliente',
-'jinkxmonsoon',
-'joslynfox',
-'jujubee',
-'kandyho',
-'katya',
-'kellymantle',
-'kennedydavenport',
-'kenyamichaels',
-'kimchi',
-'laganjaestranja',
-'lailamcqueen',
-'lashauwnbeyond',
-'latriceroyale',
-'lineyshasparks',
-'madamelaqueer',
-'magnoliacrawford',
-'manilaluzon',
-'mariah',
-'max',
-'milan',
-'milk',
-'mimiimfurst',
-'missfame',
-'monicabeverlyhillz',
-'morganmcmichaels',
-'mrs.kashadavis',
-'mystiquesummersmadison',
-'naomismalls',
-'nayshalopez',
-'nicolepaigebrooks',
-'ninaflowers',
-'ongina',
-'pandoraboxxx',
-'pearl',
-'pennytration',
-'phiphiohara',
-'phoenix',
-'raja',
-'raven',
-'rebeccaglasscock',
-'robbieturner',
-'roxxxyandrews',
-'saharadavenport',
-'sashabelle',
-'serenachacha',
-'shangela',
-'shannel',
-'sharonneedles',
-'sonique',
-'stacylanematthews',
-'tammiebrown',
-'tatianna',
-'tempestdujour',
-'theprincess',
-'thorgythor',
-'trinityk.bonet',
-'trixiemattel',
-'tyrasanchez',
-'venusd-lite',
-'victoriaporkchop',
-'violetchachki',
-'vivacious',
-'viviennepinay',
-'willam',
-'yarasofia'
-]
-
-var correctMessages = [
-'Yes! Way to go!',
-'Yass queen! Keep up the good work',
-"That's right!",
-"Correct answer!"
-]
-
-var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertadas
-
 function start() {
 	updateCounter(); //chama a função updateCounter() ao inicializar a pagina (veja abaixo)
 }
@@ -136,8 +24,9 @@ function checkAnswer () { //essa função verifica se a resposta está certa
 			isCorrect = true; 
 			x = correctAnswers.splice(i,1); //tira do array de respostas que falta
 			guessedAnswers.push(x); //e coloca no array de respostas acertadas
-
 			feedbackTxt = correctMessages[random(correctMessages.length)];
+			document.getElementById('guessedAnswers').innerHTML += `${x}<br>`;
+
 		}
 	}
 
@@ -151,8 +40,12 @@ function checkAnswer () { //essa função verifica se a resposta está certa
 	}
 
 	updateCounter();
-	console.log(feedbackTxt);
+	let feedbackColor;
+	isCorrect ? feedbackColor = 'green' : feedbackColor = 'red';
+	document.getElementById('feedback').style.color = feedbackColor;
 	document.getElementById('feedback').innerHTML = feedbackTxt;
+	clearInput();
+
 
 
 }
@@ -160,13 +53,16 @@ function checkAnswer () { //essa função verifica se a resposta está certa
 function keyPressed (e) {
 	if (e.keyCode == 13){
 		checkAnswer()
-		document.getElementById('textBox').value = "";
-		console.log('Enter was pressed');
 	} else {
-		console.log('Other key pressed');
 	}
 }
 
 function random(max){
 	return Math.floor(Math.random() * max); 
+}
+
+function clearInput() {
+	document.getElementById('textBox').style.color = 'black';
+	document.getElementById('textBox').value = "";
+
 }
