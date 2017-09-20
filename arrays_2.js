@@ -1,18 +1,15 @@
 var correctAnswers = [
 	{name: ['Acid Betty', 'acid beth'],
-	correctMessage: 'No need to adjust your TV sets... This acid trip is all real...'
-	},
+	correctMessage: 'No need to adjust your TV sets... This acid trip is all real...' },
 
 	{name: ['Adore Delano', 'Adore'],
 	correctMessage:'Party!'},
 
 	{name: ["Akashia", "Akasha"],
-	correctMessage: "Serving trip and fall realness."
-	},
+	correctMessage: "Serving trip and fall realness."},
 
 	{name: ['Alaska Thunderfuck','Alaska 5000', 'Alaska Thunderfukc', 'Alaksa'],
-	correctMessage: 'Hieeee!'
-	},
+	correctMessage: 'Hieeee!'},
 
 	{name: ['Alexis Mateo'],
 	correctMessage: "BAM! Right"},
@@ -22,9 +19,6 @@ var correctAnswers = [
 
 	{name: ['Alyssa Edwards', 'Alissa Edwards', 'Alisa Edwards', 'Alysa Edwards'],
 	correctMessage: "*pops tongue*"},
-
-	{name: ['Milk'],
-	correctMessage: "Right! Oh i miss that pretty face"},
 
 	{name: ['April Carrión', 'April Carrion', 'April Carion', 'April Caryon', 'April ']},
 
@@ -144,64 +138,127 @@ var correctAnswers = [
 	{name: ['Magnolia Crawford']},
 
 	{name: ['Manila Luzon']},
+
+	{name:['Mariah Balenciaga', 'Mariah', 'Maria']},
+
+	{name: ['Max', 'The Max Collective']},
+
+	{name: ['Milan']},
+
+	{name: ['Milk']},
+
+	{name: ['MiMi Imfurst', 'Mimi imfirst']},
+
+	{name: ['Miss Fame']},
+
+	{name: ['Monica Beverly Hillz', 'Monica Beverly Hills']},
+
+	{name: ['Morgan McMichaels', 'Morgan']},
+
+	{name: ['Mrs. Kasha Davis', 'Kasha Davis']},
+
+	{name: ['Mystique Summers Madison', 'Mystique', 'Mistique', 'Mystique Summers', 'Mistique Summers'],	
+	correctMessage: "Bitch, I AM FROM CHICAGO"},
+
+	{name: ['Naomi Smalls'],
+	correctMessage: "Check your lipstick before you come for me"},
+
+	{name: ['Naysha Lopez', 'Naysha Lopes', 'Naysha'],
+	correctMessage: "Double eliminaysha"},
+
+	{name: ['Nicole Paige Brooks', 'God', 'NPB', 'Nicole Page Brooks']},
+
+	{name: ['Nina Flowers']},
+
+	{name: ['Ongina'],
+	correctMessage: "<3"},
+
+	{name:  ['Pandora Boxxx', 'Pandora Box', 'Pandora Boxx']},	
+
+	{name: ['Pearl'],
+	correctMessage: "Is there something on my face:"},
+
+	{name: ['Penny Tration']},
+
+	{name: ["PhiPhi O'hara", "phiphi ohara", "phi phi"],
+	correctMessage: "I SAID I FELT"},
+
+	{name: ["Phoenix"],
+	correctMessage: "DID YOU KNOW? She is that girl that wore the same dress as that other girl on season 3"},
+
+	{name: ['Raja'],
+	correctMessage: "A winner is a winner, né mores?"},
+
+	{name: ['Raven']},
+
+	{name: ['Rebecca Glasscock', 'Rebeca Glasscock'],
+	correctMessage: 'Rocker star forever in our hearts'},
+
+	{name: ['Robbie Turner', 'Rob Turner', 'Robie Turner'],
+	correctMessage: 'Second hand Jinkx Monsoon'},
+
+	{name: ['Roxxxy Andrews', 'Roxy Andrews', 'Roxxxy Andrew', 'Roxy Andrew'],
+	correctMessage: "Two wigs, one bus stop"},
+
+	{name: ['Sahara Davenport', 'Sahara'],
+	correctMessage: 'May she rest in peace ;('},
+
+	{name: ['Sasha Belle', 'Sasha Bell'],
+	correctMessage: 'SAY HELLO TO MY LITTLE FRIENDS'},
+
+	{name: ['Serena ChaCha'],
+	correctMessage: "Except for Serena AAAAH HAHA"},
+
+	{name: ['Shangela Laquifa Wadley', 'Shangela'],
+	correctMessage: 'HALELLOO'},
+
+	{name: ['Shannel', 'Chanel', 'Shanel', 'Channel'],
+	correctMessage: 'Mrs. Mandarin'},
+
+	{name: ['Sonique', 'Sonic']},
+
+	{name: ['Stacy Lane Matthews', 'Stacy Lane Mathews', 'Stacy', 'Stacy Lane Mattews'],
+	correctMessage: "Is this couture?"},
+
+	{name: ['Tammie Brown', 'Tamy Brown', 'Tammy Brown'],
+	correctMessage: "I'm acting."},
+
+	{name: ['Tatianna', 'Tatiana'],
+	correctMessage: "Choices."},
+
+	{name: ['Tempest DuJour'],
+	correctMessage: "Here comes momma"},
+
+	{name: ['The Princess', 'Princess'],
+	correctMessage: "1st Edition Sasha Velour"},
+
+	{name: ['Thorgy Thor', 'Thorgy', 'Torgy Thor']},
+
+	{name: ['Trinity K. Bonet', 'Trinity K Bonet', 'Trinity Kardashian Bonet']},
+
+	{name:  ['Trixie Mattel', 'Trixie Matel', 'Trixie']},
+
+	{name: ['Tyra Sanchez', 'Tyra Sanches', 'Tyra', 'The other Tyra']},
+
+	{name: ['Venus D-Lite', 'Venus Dlite', 'Venus Dee Lite', 'Venus Delight'],
+	correctMessage: 'Madonna "lookalike"'},
+
+	{name: ['Victoria "Porkchop" Parker', 'Victoria Porkchop', 'Victoria Porkchop Parker', 'Vitoria Porkchop'],
+	correctMessage: 'Hey, Porkchop'},
+
+	{name: ['Violet Chachki', 'Violet Chachkey']},
+
+	{name: ['Vivacious'],
+	correctMessage: "Mother has arrived."},
+
+	{name: ['Vivienne Pinay', 'Viviane', 'Vivienne', 'Viviene Pinay'],
+	correctMessage: "First double elimination in herstory, with honey mahoganny"},
+
+	{name: ['Willam'],
+	correctMessage: "It's too late to Rupologize"},
+
+	{name: ['Yara Sofia'],
+	correctMessage: "Echa pa'lante!"}
 ];
 
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertadas
-
-/*
-var Answers = [
-'lashauwnbeyond',
-'latriceroyale',
-'lineyshasparks',
-'madamelaqueer',
-'magnoliacrawford',
-'manilaluzon',
-'mariah',
-'max',
-'milan',
-'milk',
-'mimiimfurst',
-'missfame',
-'monicabeverlyhillz',
-'morganmcmichaels',
-'mrs.kashadavis',
-'mystiquesummersmadison',
-'naomismalls',
-'nayshalopez',
-'nicolepaigebrooks',
-'ninaflowers',
-'ongina',
-'pandoraboxxx',
-'pearl',
-'pennytration',
-'phiphiohara',
-'phoenix',
-'raja',
-'raven',
-'rebeccaglasscock',
-'robbieturner',
-'roxxxyandrews',
-'saharadavenport',
-'sashabelle',
-'serenachacha',
-'shangela',
-'shannel',
-'sharonneedles',
-'sonique',
-'stacylanematthews',
-'tammiebrown',
-'tatianna',
-'tempestdujour',
-'theprincess',
-'thorgythor',
-'trinityk.bonet',
-'trixiemattel',
-'tyrasanchez',
-'venusd-lite',
-'victoriaporkchop',
-'violetchachki',
-'vivacious',
-'viviennepinay',
-'willam',
-'yarasofia'
-]*/
