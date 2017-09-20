@@ -10,7 +10,7 @@ var correctAnswers = [
 	correctMessage: "Serving trip and fall realness."
 	},
 
-	{name: ['Alaska','Alaska Thunderfuck', 'Alaska Thunderfukc', 'Alaksa'],
+	{name: ['Alaska Thunderfuck','Alaska 5000', 'Alaska Thunderfukc', 'Alaksa'],
 	correctMessage: 'Hieeee!'
 	},
 
@@ -40,11 +40,12 @@ var correctAnswers = [
 	{name: ['Bob The Drag Queen', 'Bob, the drag queen', 'Bob'],
 	correctMessage: 'Purse first'},
 
-	{name: ['Carmen Carrerra']},
+	{name: ['Carmen Carerra', 'Carmem Carrera', 'Carmen Carera']},
 
 	{name: ['Chad Michaels', 'Chad']},
 
-	{name: ['Chi Chi DeVayne', 'Chi chi']},
+	{name: ['Chi Chi DeVayne', 'Chi chi'],
+	correctMessage: "I don't get ready, I stay ready"},
 
 	{name: ['Coco Montrese', 'Coco'],
 	correctMessage: 'Look how orange she fucking looks'},
@@ -62,8 +63,8 @@ var correctAnswers = [
 
 	{name: ['Delta Work']},
 
-	{name: ['Derrick Barry', 'Darrick Barry', 'Derrick Berry', 'Darrick Berry'],
-	correctMessage: ''},
+	{name: ['Derrick Barry', 'Darrick Barry', 'Derrick Berry', 'Darrick Berry', 'barry'],
+	correctMessage: "If I want to do ratchet drag next week, can you give me any tips?"},
 
 	{name: ['Detox'],
 	correctMessage: 'Naomi campbelling these hoes to the crown... NEXT'},
@@ -71,15 +72,16 @@ var correctAnswers = [
 	{name: ['DiDa Ritz', 'Dita Ritz']},
 
 	{name: ['Gia Gunn', 'Gia Gun'],
-	correctMessage: 'Just landed like fresh tilapia'},
+	correctMessage: 'Landed like fresh tilapia'},
 
 	{name: ['Ginger Minj'],
-	correctMessage: 'Glamour toad'},
+	correctMessage: 'I like to describe myself as a glamour-toad.'},
 
 	{name: ['Honey Mahogany', 'Honey Mahoganny'],
 	correctMessage: "Good old double elimination"},
 
-	{name: ['India Ferrah', 'Indiah Farrah', 'India Pharrah', 'India']},
+	{name: ['India Ferrah', 'Indiah Farrah', 'India Pharrah', 'India'],
+	correctMessage: "Put me down!!"},
 
 	{name: ['Ivy Winters'],
 	correctMessage: 'Ivyyyyyyyyy winteeeeeeers'},
@@ -97,24 +99,57 @@ var correctAnswers = [
 
 	{name: ['Jessica Wild']},
 
-	{name: ['Jiggly Caliente']}
+	{name: ['Jiggly Caliente', 'Caliente']},
+
+	{name: ['Jinkx Monsoon', 'Monsoon'],
+	correctMessage: 'Can I get, can I get an amen?'},
+
+	{name: ['Joslyn Fox', 'Joslin Fox', 'Josslyn Fox'],
+	correctMessage: 'Fon fon'},
+
+	{name: ['Jujubee'],
+	correctMessage: "I like long walks on the beach, big d*cks, and fried chicken."},
+
+	{name: ['Kandy Ho', 'Kandy Hoe', 'Candy Ho', 'Candy Hoe'],
+	correctMessage: "I hope you girls got a sweet tooth, because Kandy's in the motherf*cking house."},
+
+	{name: ['Yekaterina Petrovna Zamolodchikova', 'Katya', 'Zamolodchkova'],
+	correctMessage: "But your dad just calls me katya"},
+
+	{name: ['Kelly Mantle']},
+
+	{name: ['Kennedy Davenport'],
+	correctMessage:"The struggle is real."},
+
+	{name: ['Kenya Michaels']},
+
+	{name: ['Kim Chi'],
+	correctMessage: "I came to DESTROY EVERYONE, with my make-up."},
+
+	{name: ['Laganja Estranja', 'Laganja'],
+	correctMessage:"COME ON SEASON 6, TIME TO GET SICKENING"},
+
+	{name: ['Laila McQueen', 'Layla McQueen']},
+
+	{name: ['Lashauwn Beyond', 'Lashawn Beyond', 'Lashaun Beyond', 'Lashaun Beyond'],
+	correctMessage: "This is not RuPaul's best friend race!"},
+
+	{name: ['Latrice Royale', 'Latrice Royal'],
+	correctMessage: "THE SHADE OF IT ALL"},
+
+	{name: ['Lineysha Sparks', 'Linaysha Sparks', 'Lineisha Sparks']},
+
+	{name: ['Madame LaQueer']},
+
+	{name: ['Magnolia Crawford']},
+
+	{name: ['Manila Luzon']},
 ];
 
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertadas
 
 /*
 var Answers = [
-'jinkxmonsoon',
-'joslynfox',
-'jujubee',
-'kandyho',
-'katya',
-'kellymantle',
-'kennedydavenport',
-'kenyamichaels',
-'kimchi',
-'laganjaestranja',
-'lailamcqueen',
 'lashauwnbeyond',
 'latriceroyale',
 'lineyshasparks',
