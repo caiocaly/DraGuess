@@ -1,0 +1,12 @@
+* {
+	font-family: 'Nunito';
+}
+
+h1 {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#textBox {
+	color: gray;		
+}
