@@ -8,7 +8,7 @@ var correctAnswers = [
 	{name: ["Akashia", "Akasha"],
 	correctMessage: "Serving trip and fall realness."},
 
-	{name: ['Alaska Thunderfuck','Alaska 5000', 'Alaska Thunderfukc', 'Alaksa'],
+	{name: ['Alaska Thunderfuck','Alaska 5000', 'Alaska Thunderfukc', 'Alaksa', 'Alaska'],
 	correctMessage: 'Hieeee!'},
 
 	{name: ['Alexis Mateo'],
@@ -36,7 +36,8 @@ var correctAnswers = [
 
 	{name: ['Carmen Carerra', 'Carmem Carrera', 'Carmen Carera']},
 
-	{name: ['Chad Michaels', 'Chad']},
+	{name: ['Chad Michaels', 'Chad'],
+	correctMessage: "I'm a professional"},
 
 	{name: ['Chi Chi DeVayne', 'Chi chi'],
 	correctMessage: "I don't get ready, I stay ready"},
@@ -95,7 +96,7 @@ var correctAnswers = [
 
 	{name: ['Jiggly Caliente', 'Caliente']},
 
-	{name: ['Jinkx Monsoon', 'Monsoon'],
+	{name: ['Jinkx Monsoon', 'Jinx Monsoon', 'Jinxk Monsoon','Jynkx Monsoon', 'Jynx Monsoon', 'Jynxk Monsoon'],
 	correctMessage: 'Can I get, can I get an amen?'},
 
 	{name: ['Joslyn Fox', 'Joslin Fox', 'Josslyn Fox'],
@@ -110,7 +111,8 @@ var correctAnswers = [
 	{name: ['Yekaterina Petrovna Zamolodchikova', 'Katya', 'Zamolodchkova'],
 	correctMessage: "But your dad just calls me katya"},
 
-	{name: ['Kelly Mantle']},
+	{name: ['Kelly Mantle'],
+	correctMessage: "Don't you know who I think I am?"},
 
 	{name: ['Kennedy Davenport'],
 	correctMessage:"The struggle is real."},
@@ -123,7 +125,8 @@ var correctAnswers = [
 	{name: ['Laganja Estranja', 'Laganja'],
 	correctMessage:"COME ON SEASON 6, TIME TO GET SICKENING"},
 
-	{name: ['Laila McQueen', 'Layla McQueen']},
+	{name: ['Laila McQueen', 'Layla McQueen'],
+	correctMessage: "I don't wanna say gothy but like.... gothy"},
 
 	{name: ['Lashauwn Beyond', 'Lashawn Beyond', 'Lashaun Beyond', 'Lashaun Beyond'],
 	correctMessage: "This is not RuPaul's best friend race!"},
@@ -133,7 +136,8 @@ var correctAnswers = [
 
 	{name: ['Lineysha Sparks', 'Linaysha Sparks', 'Lineisha Sparks']},
 
-	{name: ['Madame LaQueer']},
+	{name: ['Madame LaQueer'],
+	correctMessage: 'Eeeeeeeeeew'},
 
 	{name: ['Magnolia Crawford']},
 
@@ -149,7 +153,8 @@ var correctAnswers = [
 
 	{name: ['MiMi Imfurst', 'Mimi imfirst']},
 
-	{name: ['Miss Fame']},
+	{name: ['Miss Fame'],
+	correctMessage: "How's your head?"},
 
 	{name: ['Monica Beverly Hillz', 'Monica Beverly Hills']},
 
@@ -166,7 +171,8 @@ var correctAnswers = [
 	{name: ['Naysha Lopez', 'Naysha Lopes', 'Naysha'],
 	correctMessage: "Double eliminaysha"},
 
-	{name: ['Nicole Paige Brooks', 'God', 'NPB', 'Nicole Page Brooks']},
+	{name: ['Nicole Paige Brooks', 'God', 'NPB', 'Nicole Page Brooks'],
+	correctMessage: 'From Atlanta, Georgia'},
 
 	{name: ['Nina Flowers']},
 
@@ -197,7 +203,7 @@ var correctAnswers = [
 	{name: ['Robbie Turner', 'Rob Turner', 'Robie Turner'],
 	correctMessage: 'Second hand Jinkx Monsoon'},
 
-	{name: ['Roxxxy Andrews', 'Roxy Andrews', 'Roxxxy Andrew', 'Roxy Andrew'],
+	{name: ['Roxxxy Andrews', 'Roxy Andrews', 'Roxxxy Andrew', 'Roxy Andrew', 'roxxxie andrews', 'roxxie andrews', 'roxie andrews'],
 	correctMessage: "Two wigs, one bus stop"},
 
 	{name: ['Sahara Davenport', 'Sahara'],
@@ -238,7 +244,8 @@ var correctAnswers = [
 
 	{name:  ['Trixie Mattel', 'Trixie Matel', 'Trixie']},
 
-	{name: ['Tyra Sanchez', 'Tyra Sanches', 'Tyra', 'The other Tyra']},
+	{name: ['Tyra Sanchez', 'Tyra Sanches', 'Tyra', 'The other Tyra'],
+	correctMessage: 'WHY U TALKING?'},
 
 	{name: ['Venus D-Lite', 'Venus Dlite', 'Venus Dee Lite', 'Venus Delight'],
 	correctMessage: 'Madonna "lookalike"'},
@@ -258,7 +265,42 @@ var correctAnswers = [
 	correctMessage: "It's too late to Rupologize"},
 
 	{name: ['Yara Sofia'],
-	correctMessage: "Echa pa'lante!"}
+	correctMessage: "Echa pa'lante!"},
+
+	{name: ['Ornatia']},
+
+	// Season 9
+	{name: ["Lil' Pound Cake", 'Lil Pound Cake', 'Little Pound Cake']},
+
+	{name: ['Kimora Black', 'Kimora Black', 'Kimora'],
+	correctMessage: "What's an adjective?"},
+
+	{name: ['Jaymes Mansfield', 'James Mansfield', 'Jaymes Mansfild', 'James Mansfild'],
+	correctMessage: 'Hi, shapeshifters!'},
+
+	{name: ['Farrah Moan', 'Pharah Moan', 'Ferrah Moan', 'Pharrah Moan', 'Farah Moan'],
+	correctMessage: "Oh ;("},
+
+	{name: ["Nina Bo'Nina Brown", 'Nina bonina brown', 'nina brown', 'nina bonina', "Nina Bo'nina"],
+	correctMessage: "Nina, Bo'nina, Banana, Fofana, On season 9 boom boom brown"},
+
+	{name: ['Peppermint']}
 ];
 
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertadas
+
+
+/*
+Sasha Velour, 29, Brooklyn NY
+Eureka O'Hara, 25, Johnson City TN
+Charlie Hides, 52, Boston MA
+Alexis Michelle, 33, New York NY
+Aja, 22, Brooklyn NY
+Valentina, 25, Los Angeles CA
+Bible Girl, 23, New York NY
+Trinity Taylor, 31, Orlando FL
+Shea Couleé, 27, Chicago IL
+
+[19:17, 20/9/2017] Pedrinho: Tinha q ter uns easter eggs                        
+[19:17, 20/9/2017] Pedrinho: Tipo ele responder alguma coisa se vc escrever little pound cake ou ornacia
+*/

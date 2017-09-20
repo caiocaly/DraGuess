@@ -1,5 +1,13 @@
+var timerStarted = false;
+var total = correctAnswers.length;
+var timeLimit = {
+	minutes: 5,
+	seconds: 0
+}
+
 function start() {
 updateCounter(); //chama a função updateCounter() ao inicializar a pagina (veja abaixo)
+checkEmptyMessage();
 }
 
 function updateCounter() { //ela atualiza um contador de respostas certas x quantas faltam
@@ -12,6 +20,11 @@ document.getElementById('answerCounter').innerHTML = countResult;
 function checkAnswer () { //essa função verifica se a resposta está certa
 
 	var isCorrect, isRepeated, feedbackTxt; //variáveis que vamos usar na função;
+ 
+	if (timerStarted == false) {
+		timer();
+		timerStarted = true;
+	}
 
 	guess = normalize(document.getElementById("textBox").value);
 	console.log("guessed " + guess);
@@ -20,7 +33,6 @@ function checkAnswer () { //essa função verifica se a resposta está certa
 
 		for (j = 0; j < correctAnswers[i].name.length; j++){
 			let answerBeingChecked = normalize(correctAnswers[i].name[j]);
-			console.log(answerBeingChecked);
 
 			if (guess == answerBeingChecked){
 				isCorrect = true; 
@@ -76,8 +88,6 @@ function clearInput() {
 function transferDrag(position){
 	let dragTransfer = correctAnswers.splice(position,1); //tira do array de respostas que falta
 	guessedAnswers.push(dragTransfer[0]); //e coloca no array de respostas acertadas
-	console.log(correctAnswers);
-	console.log(guessedAnswers);
 }
 
 
@@ -90,5 +100,93 @@ function normalize(x){
 }
 
 
-guess = document.getElementById("textBox").value; //pega o que o usuário digitou
-guess = guess.toLowerCase(); //converte pra caixa baixa, ajuda a reduzir erros bobos
+function timer(){
+  var min = timeLimit.minutes;
+  var sec = timeLimit.seconds;
+
+  timer = setInterval(function(){
+    min >= 10? document.getElementById('minutes').innerHTML=min + ":" : document.getElementById('minutes').innerHTML="0"+ min + ":";
+    sec >= 10? document.getElementById('seconds').innerHTML=sec : document.getElementById('seconds').innerHTML="0"+sec;
+    if( min == 0 && sec ==0) { 
+      clearInterval(timer);
+      endGame(); 
+    };
+    if (sec == 0) {
+      min--;
+      sec=59;
+    } else {
+      sec--;
+    }
+  }, 1000);
+}
+
+function endGame() {
+	let score = guessedAnswers.length;
+	let read = "";
+
+	allElements = document.getElementsByTagName('*');
+	for (i = 0; i < allElements.length; i++){
+	allElements[i].style.visibility = 'hidden';
+	}
+
+	document.getElementById('results').style.visibility = "visible";
+
+	let guessed = guessedAnswers.length;
+
+	addToResults(`You got ${score} out of ${total}`);
+
+	switch (true) {
+		case (score == 0):
+		read = "Do you even know what a drag queen is?";
+		break;
+
+		case (score > 0 && score <=10):
+		read = "Did you even try?";
+		break;
+
+		case (score >10 && score <=20):
+		read = "Bad but could be worse. You'd be a decent filler queen.";
+		break;
+
+		case (score >20 && score <=40):
+		read = "Nice job, you watched the show!";
+		break;
+
+		case (score >40 && score <=60):
+		read = "That's a lot!! Condragulations!"
+		break;
+
+		case (score >60 && score <=80):
+		read = "Yasss queen, impressive!";
+		break;
+
+		case (score> 80 && score<total):
+		read = "COME THROUGH MAMA!  That was amazing!!!!"
+		break;
+
+		case (score == total):
+		read = "That's just impossible. You so cheated."
+		break;
+	}
+
+	addToResults(read);
+
+
+}
+
+function addToResults (content) {
+	document.getElementById('results').innerHTML += `<p> ${content} <p>`;
+}
+
+
+function checkEmptyMessage (){
+	let x =[];
+
+	for (i=0; i < correctAnswers.length; i++){
+		if (correctAnswers[i].correctMessage == undefined){
+		x.push(correctAnswers[i].name[0]);	
+		}
+	}
+
+	console.log(x);
+}
