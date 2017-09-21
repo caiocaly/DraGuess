@@ -2,7 +2,7 @@ var guessedAnswers =[]; //array que vai armazenar as respostas que já foram ace
 var timerStarted = false;
 var total = correctAnswers.length;
 var timeLimit = {
-	minutes: 5,
+	minutes: 15,
 	seconds: 0,
 	hurryUp: 30,
 }
