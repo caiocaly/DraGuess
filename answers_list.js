@@ -8,7 +8,7 @@ var correctAnswers = [
 	{name: ["Akashia", "Akasha"],
 	correctMessage: "Serving trip and fall realness."},
 
-	{name: ['Alaska Thunderfuck','Alaska 5000', 'Alaska Thunderfukc', 'Alaksa'],
+	{name: ['Alaska Thunderfuck','Alaska 5000', 'Alaska Thunderfukc', 'Alaksa', 'Alaska'],
 	correctMessage: 'Hieeee!'},
 
 	{name: ['Alexis Mateo'],
@@ -36,7 +36,8 @@ var correctAnswers = [
 
 	{name: ['Carmen Carerra', 'Carmem Carrera', 'Carmen Carera']},
 
-	{name: ['Chad Michaels', 'Chad']},
+	{name: ['Chad Michaels', 'Chad'],
+	correctMessage: "I'm a professional"},
 
 	{name: ['Chi Chi DeVayne', 'Chi chi'],
 	correctMessage: "I don't get ready, I stay ready"},
@@ -93,9 +94,9 @@ var correctAnswers = [
 
 	{name: ['Jessica Wild']},
 
-	{name: ['Jiggly Caliente', 'Caliente']},
+	{name: ['Jiggly Caliente', 'Caliente', 'Jiggly']},
 
-	{name: ['Jinkx Monsoon', 'Monsoon'],
+	{name: ['Jinkx Monsoon', 'Jinx Monsoon', 'Jinxk Monsoon','Jynkx Monsoon', 'Jynx Monsoon', 'Jynxk Monsoon'],
 	correctMessage: 'Can I get, can I get an amen?'},
 
 	{name: ['Joslyn Fox', 'Joslin Fox', 'Josslyn Fox'],
@@ -110,7 +111,8 @@ var correctAnswers = [
 	{name: ['Yekaterina Petrovna Zamolodchikova', 'Katya', 'Zamolodchkova'],
 	correctMessage: "But your dad just calls me katya"},
 
-	{name: ['Kelly Mantle']},
+	{name: ['Kelly Mantle'],
+	correctMessage: "Don't you know who I think I am?"},
 
 	{name: ['Kennedy Davenport'],
 	correctMessage:"The struggle is real."},
@@ -123,7 +125,8 @@ var correctAnswers = [
 	{name: ['Laganja Estranja', 'Laganja'],
 	correctMessage:"COME ON SEASON 6, TIME TO GET SICKENING"},
 
-	{name: ['Laila McQueen', 'Layla McQueen']},
+	{name: ['Laila McQueen', 'Layla McQueen'],
+	correctMessage: "I don't wanna say gothy but like.... gothy"},
 
 	{name: ['Lashauwn Beyond', 'Lashawn Beyond', 'Lashaun Beyond', 'Lashaun Beyond'],
 	correctMessage: "This is not RuPaul's best friend race!"},
@@ -133,7 +136,8 @@ var correctAnswers = [
 
 	{name: ['Lineysha Sparks', 'Linaysha Sparks', 'Lineisha Sparks']},
 
-	{name: ['Madame LaQueer']},
+	{name: ['Madame LaQueer'],
+	correctMessage: 'Eeeeeeeeeew'},
 
 	{name: ['Magnolia Crawford']},
 
@@ -143,19 +147,22 @@ var correctAnswers = [
 
 	{name: ['Max', 'The Max Collective']},
 
-	{name: ['Milan']},
+	{name: ['Milan'],
+	correctMessage: "*rubs awkwardly on the floor*"},
 
 	{name: ['Milk']},
 
 	{name: ['MiMi Imfurst', 'Mimi imfirst']},
 
-	{name: ['Miss Fame']},
+	{name: ['Miss Fame'],
+	correctMessage: "How's your head?"},
 
 	{name: ['Monica Beverly Hillz', 'Monica Beverly Hills']},
 
 	{name: ['Morgan McMichaels', 'Morgan']},
 
-	{name: ['Mrs. Kasha Davis', 'Kasha Davis']},
+	{name: ['Mrs. Kasha Davis', 'Kasha Davis'],
+	correctMessage: "I'm ho~ome"},
 
 	{name: ['Mystique Summers Madison', 'Mystique', 'Mistique', 'Mystique Summers', 'Mistique Summers'],	
 	correctMessage: "Bitch, I AM FROM CHICAGO"},
@@ -166,7 +173,8 @@ var correctAnswers = [
 	{name: ['Naysha Lopez', 'Naysha Lopes', 'Naysha'],
 	correctMessage: "Double eliminaysha"},
 
-	{name: ['Nicole Paige Brooks', 'God', 'NPB', 'Nicole Page Brooks']},
+	{name: ['Nicole Paige Brooks', 'God', 'NPB', 'Nicole Page Brooks'],
+	correctMessage: 'From Atlanta, Georgia'},
 
 	{name: ['Nina Flowers']},
 
@@ -197,7 +205,7 @@ var correctAnswers = [
 	{name: ['Robbie Turner', 'Rob Turner', 'Robie Turner'],
 	correctMessage: 'Second hand Jinkx Monsoon'},
 
-	{name: ['Roxxxy Andrews', 'Roxy Andrews', 'Roxxxy Andrew', 'Roxy Andrew'],
+	{name: ['Roxxxy Andrews', 'Roxy Andrews', 'Roxxxy Andrew', 'Roxy Andrew', 'roxxxie andrews', 'roxxie andrews', 'roxie andrews'],
 	correctMessage: "Two wigs, one bus stop"},
 
 	{name: ['Sahara Davenport', 'Sahara'],
@@ -238,7 +246,8 @@ var correctAnswers = [
 
 	{name:  ['Trixie Mattel', 'Trixie Matel', 'Trixie']},
 
-	{name: ['Tyra Sanchez', 'Tyra Sanches', 'Tyra', 'The other Tyra']},
+	{name: ['Tyra Sanchez', 'Tyra Sanches', 'Tyra', 'The other Tyra'],
+	correctMessage: 'WHY U TALKING?'},
 
 	{name: ['Venus D-Lite', 'Venus Dlite', 'Venus Dee Lite', 'Venus Delight'],
 	correctMessage: 'Madonna "lookalike"'},
@@ -258,7 +267,50 @@ var correctAnswers = [
 	correctMessage: "It's too late to Rupologize"},
 
 	{name: ['Yara Sofia'],
-	correctMessage: "Echa pa'lante!"}
+	correctMessage: "Echa pa'lante!"},
+
+	{name: ['Ornatia']},
+
+	{name: ["Lil' Pound Cake", 'Lil Pound Cake', 'Little Pound Cake']},
+
+	// Season 9
+
+	{name: ['Kimora Black', 'Kimora Black', 'Kimora'],
+	correctMessage: "What's an adjective?"},
+
+	{name: ['Jaymes Mansfield', 'James Mansfield', 'Jaymes Mansfild', 'James Mansfild'],
+	correctMessage: 'Hi, shapeshifters!'},
+
+	{name: ['Farrah Moan', 'Pharah Moan', 'Ferrah Moan', 'Pharrah Moan', 'Farah Moan', 'Farra Moan'],
+	correctMessage: "Oh ;("},
+
+	{name: ["Nina Bo'Nina Brown", 'Nina bonina brown', 'nina brown', 'nina bonina', "Nina Bo'nina"],
+	correctMessage: "Nina, Bo'nina, Banana, Fofana, On season 9 boom boom brown"},
+
+	{name: ['Peppermint']},
+
+	{name: ['Sasha Velour', 'Sasha Velur', 'Sasha Veluor']},
+
+	{name: ["Eureka O'Hara", "eureka ohara", "eureka"]},
+
+	{name: ["Charlie Hides", "Charlie Hydes"],
+	correctMessage: "And I'm *** years old"},
+
+	{name: ['Alexis Michelle', 'Alexis Lichelle', 'Alexis Michele', 'other alexis']},
+
+	{name: ["Aja"],
+	correctMessage: `You're perfect 💯, you're beautiful 👰, you look 👀 like Linda Evangelista 💃.. 
+	You're a model 💋 💅. Everything 🔁 about you ☞ is perfect 💯! Did you stone 💎 those tights 👢 ? 
+	Oh, you're smiling 👱 ! They eat 🍽 her up 🔝 EVERY🕛SINGLE🕧TIME🕗 she's on that damned 👹 stage 🏁.
+	She 😡ftsdbsds😣. She could walk 👣 out there in a fucking 😠 diaper 👶 and they'll 👥 be like 🗣: 
+	"Valentina! 👰 Your smile 👄 is beautiful! 😍 `},
+
+	{name: ['Valentina'],
+	correctMessage: "I'd like to keep that on, please"},
+
+	{name: ['Shea Couleé', 'Shea Coulee', 'Shea coule', 'Xeculê', 'xecule'],
+	correctMessage: "And I didn't come here to play, I came to slay"},
+
+	{name: ['Trinity "The Tuck" Taylor', 'Trinity Taylor', "Trinity Tuck", "The tuck"]}
 ];
 
-var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertadas
