@@ -10,24 +10,28 @@
 </head>
 
 <body onload="start()">
-<div id="main">
-	<div id="results"></div>
 
-	<div id="input">
-		<h1>Total Rucall</h1>
-		<p id="sub">How many RPDR contestants can you name in only 5 minutes?</p>	
-		<div id="timer"></div>
-		<input id="textBox" type="text" onkeypress ="keyPressed(event)" onclick="clearInput()">
-		<button onclick="checkAnswer()">Submit</button>
-	</div> 
-	<div id="feedback"></div>
-	<br>
-	<div id="answers">
+	<div id="title">
+		<img src="assets/title.png" alt="Title" >
+	</div>
+
+	<div class="main">
+		<div id="results"></div>
+		<div id="input">
+			<!-- <h1>Total Rucall</h1> -->
+			<p id="sub">How many RPDR contestants can you name in only 5 minutes?</p>	
+			<div id="timer"></div>
+			<input id="textBox" type="text" onkeypress ="keyPressed(event)" onclick="clearInput()">
+			<button onclick="checkAnswer()">Submit</button>
+			<p id="feedback"></p>
+		</div> 
+	</div>
+		
+	<div id="answers" class='main'>
 		<h2> Guessed answers: </h2>
 		<p id="answerCounter"></p>
 		<p id="guessedAnswers"></p>
-	</div>
-</div>
+		</div>
 	<script type="text/javascript" src="answers_list.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </body>

@@ -5,20 +5,20 @@ var timeLimit = {
 	minutes: 5,
 	seconds: 0,
 	hurryUp: 30,
-}
+	}
 
 function start() {	
-updateCounter(); //chama a função updateCounter() ao inicializar a pagina (veja abaixo)
-document.getElementById('textBox').value = "Type then press enter";
-checkEmptyMessage();
-}
+	updateCounter(); //chama a função updateCounter() ao inicializar a pagina (veja abaixo)
+	document.getElementById('textBox').value = "Type then press enter";
+	checkEmptyMessage();
+	}
 
 function updateCounter() { //ela atualiza um contador de respostas certas x quantas faltam
-let toGo = correctAnswers.length; // # respostas que falta acertar
-let guessed = guessedAnswers.length; //# respostas acertadass
-let countResult = `${guessed} guessed, ${toGo} to go.`; //texto que vai na tela
-document.getElementById('answerCounter').innerHTML = countResult;
-}
+	let toGo = correctAnswers.length; // # respostas que falta acertar
+	let guessed = guessedAnswers.length; //# respostas acertadass
+	let countResult = `${guessed} guessed, ${toGo} to go.`; //texto que vai na tela
+	document.getElementById('answerCounter').innerHTML = countResult;
+	}
 
 function checkAnswer () { //essa função verifica se a resposta está certa
 	var isCorrect, isRepeated, feedbackTxt; //variáveis que vamos usar na função;
