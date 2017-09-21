@@ -5,7 +5,8 @@
 
 body {
 	background-color: black;
-	background-image: url("assets/checked_bg.png");
+	background-image: url("assets/checked_bg@2x.png");
+	background-repeat: no-repeat
 }
 
 div {
@@ -17,7 +18,8 @@ div {
 	margin-top: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;
+	width: 90%;
+	padding: 0px 20px 0 20px;
 }
 
 #textBox {
