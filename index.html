@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="main.css" type="text/css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-	<title>Guess the name</title>
+	<title>Total RuCall!</title>
 </head>
 
 <body onload="start()">
@@ -16,11 +16,11 @@
 	</div>
 -->
 
-	<div id="mainBlock" class="main">
+	<div id="mainBox" class="main">
 		<div id="results"></div>
 		<div id="input">
 			<!-- <h1>Total Rucall</h1> -->
-			<p id="sub">How many RPDR contestants can you name in only 5 minutes?</p>	
+			<p id="sub"></p>	
 			<div id="timer"></div>
 			<input id="textBox" type="text" onkeypress ="keyPressed(event)" onclick="clearInput()">
 			<button onclick="checkAnswer()">Submit</button>

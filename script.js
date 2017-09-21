@@ -10,6 +10,7 @@ var timeLimit = {
 function start() {	
 	updateCounter(); //chama a função updateCounter() ao inicializar a pagina (veja abaixo)
 	document.getElementById('textBox').value = "Type then press enter";
+	document.getElementById('sub').innerHTML = `How many RPDR contestants can you name in only ${timeLimit.minutes} minutes?`;
 	checkEmptyMessage();
 	}
 
@@ -118,10 +119,6 @@ function timer(){ // conta o tempo
   }, 1000);
 }
 
-function addToResults (content) {
-	document.getElementById('results').innerHTML += `<p> ${content} <p>`;
-}
-
 function checkEmptyMessage (){
 	let x =[];
 	for (i=0; i < correctAnswers.length; i++){
@@ -137,43 +134,39 @@ function reload(){ location.reload()};
 function endGame() {
 	let score = guessedAnswers.length;
 	let read = "";
-
-	allElements = document.getElementsByTagName('*');
-	for (i = 0; i < allElements.length; i++){
-		allElements[i].style.visibility = 'hidden';
-	}
-	document.getElementById("results").classList.toggle("main"),
-	document.getElementById('results').style.visibility = "visible";
+	document.getElementById('mainBox').innerHTML ="";
 	let guessed = guessedAnswers.length;
-	addToResults(`You got ${score} out of ${total}`);
 	switch (true) {
 		case (score == 0):
-			read = "Do you even know what a drag queen is?";
+			read = "WHAT? Do you even know what a drag queen is?";
 			break;
 		case (score > 0 && score <=10):
-			read = "Did you even try?";
+			read = "Tell me honestly: did you ever watch the show?";
 			break;
 		case (score >10 && score <=20):
-			read = "Bad but could be worse. You'd be a decent filler queen.";
+			read = "DO you even like RPDR? (That stands for RuPaul's Drag Race, in case you don't know)";
 			break;
 		case (score >20 && score <=40):
-			read = "Nice job, you watched the show!";
+			read = "Nice job, you remember quite a few.";
 			break;
 		case (score >40 && score <=60):
-			read = "That's a lot!! Condragulations!"
+			read = "Excellent!"
 			break;
 		case (score >60 && score <=80):
-			read = "Yasss queen, impressive!";
+			read = "YASSS QUEEN! Impressive memory!";
 			break;
 		case (score> 80 && score<total):
-			read = "COME THROUGH MAMA!  That was amazing!!!!"
+			read = "COME THROUGH MAMA! You're a champion!!! How can you even type so fast?"
 			break;
 		case (score == total):
-			read = "That's just impossible. You cheated."
+			read = "You cheated."
 			break;
 	}
-	addToResults(read);
-	document.getElementById('results').innerHTML += `<button onclick="reload()"> Try again? </button>`;
+
+	document.getElementById('mainBox').innerHTML += `
+		<h2> ${read} </h2>
+		<h3> You got ${score} out of ${total} </h3>
+		<button onclick="reload()"> Try again? </button>`;
 }
 
 function timerBlink(){
