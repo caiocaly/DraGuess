@@ -94,7 +94,7 @@ var correctAnswers = [
 
 	{name: ['Jessica Wild']},
 
-	{name: ['Jiggly Caliente', 'Caliente']},
+	{name: ['Jiggly Caliente', 'Caliente', 'Jiggly']},
 
 	{name: ['Jinkx Monsoon', 'Jinx Monsoon', 'Jinxk Monsoon','Jynkx Monsoon', 'Jynx Monsoon', 'Jynxk Monsoon'],
 	correctMessage: 'Can I get, can I get an amen?'},
@@ -147,7 +147,8 @@ var correctAnswers = [
 
 	{name: ['Max', 'The Max Collective']},
 
-	{name: ['Milan']},
+	{name: ['Milan'],
+	correctMessage: "*rubs awkwardly on the floor*"},
 
 	{name: ['Milk']},
 
@@ -160,7 +161,8 @@ var correctAnswers = [
 
 	{name: ['Morgan McMichaels', 'Morgan']},
 
-	{name: ['Mrs. Kasha Davis', 'Kasha Davis']},
+	{name: ['Mrs. Kasha Davis', 'Kasha Davis'],
+	correctMessage: "I'm ho~ome"},
 
 	{name: ['Mystique Summers Madison', 'Mystique', 'Mistique', 'Mystique Summers', 'Mistique Summers'],	
 	correctMessage: "Bitch, I AM FROM CHICAGO"},
@@ -269,8 +271,9 @@ var correctAnswers = [
 
 	{name: ['Ornatia']},
 
-	// Season 9
 	{name: ["Lil' Pound Cake", 'Lil Pound Cake', 'Little Pound Cake']},
+
+	// Season 9
 
 	{name: ['Kimora Black', 'Kimora Black', 'Kimora'],
 	correctMessage: "What's an adjective?"},
@@ -278,29 +281,37 @@ var correctAnswers = [
 	{name: ['Jaymes Mansfield', 'James Mansfield', 'Jaymes Mansfild', 'James Mansfild'],
 	correctMessage: 'Hi, shapeshifters!'},
 
-	{name: ['Farrah Moan', 'Pharah Moan', 'Ferrah Moan', 'Pharrah Moan', 'Farah Moan'],
+	{name: ['Farrah Moan', 'Pharah Moan', 'Ferrah Moan', 'Pharrah Moan', 'Farah Moan', 'Farra Moan'],
 	correctMessage: "Oh ;("},
 
 	{name: ["Nina Bo'Nina Brown", 'Nina bonina brown', 'nina brown', 'nina bonina', "Nina Bo'nina"],
 	correctMessage: "Nina, Bo'nina, Banana, Fofana, On season 9 boom boom brown"},
 
-	{name: ['Peppermint']}
+	{name: ['Peppermint']},
+
+	{name: ['Sasha Velour', 'Sasha Velur', 'Sasha Veluor']},
+
+	{name: ["Eureka O'Hara", "eureka ohara", "eureka"]},
+
+	{name: ["Charlie Hides", "Charlie Hydes"],
+	correctMessage: "And I'm *** years old"},
+
+	{name: ['Alexis Michelle', 'Alexis Lichelle', 'Alexis Michele', 'other alexis']},
+
+	{name: ["Aja"],
+	correctMessage: `You're perfect 💯, you're beautiful 👰, you look 👀 like Linda Evangelista 💃.. 
+	You're a model 💋 💅. Everything 🔁 about you ☞ is perfect 💯! Did you stone 💎 those tights 👢 ? 
+	Oh, you're smiling 👱 ! They eat 🍽 her up 🔝 EVERY🕛SINGLE🕧TIME🕗 she's on that damned 👹 stage 🏁.
+	She 😡ftsdbsds😣. She could walk 👣 out there in a fucking 😠 diaper 👶 and they'll 👥 be like 🗣: 
+	"Valentina! 👰 Your smile 👄 is beautiful! 😍 `},
+
+	{name: ['Valentina'],
+	correctMessage: "I'd like to keep that on, please"},
+
+	{name: ['Shea Couleé', 'Shea Coulee', 'Shea coule', 'Xeculê', 'xecule'],
+	correctMessage: "And I didn't come here to play, I came to slay"},
+
+	{name: ['Trinity "The Tuck" Taylor', 'Trinity Taylor', "Trinity Tuck", "The tuck"]}
 ];
 
-var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertadas
-
-
-/*
-Sasha Velour, 29, Brooklyn NY
-Eureka O'Hara, 25, Johnson City TN
-Charlie Hides, 52, Boston MA
-Alexis Michelle, 33, New York NY
-Aja, 22, Brooklyn NY
-Valentina, 25, Los Angeles CA
-Bible Girl, 23, New York NY
-Trinity Taylor, 31, Orlando FL
-Shea Couleé, 27, Chicago IL
-
-[19:17, 20/9/2017] Pedrinho: Tinha q ter uns easter eggs                        
-[19:17, 20/9/2017] Pedrinho: Tipo ele responder alguma coisa se vc escrever little pound cake ou ornacia
-*/
+var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada

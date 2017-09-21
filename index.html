@@ -13,15 +13,16 @@
 	<div id="results"></div>
 
 	<div id="input">
-		<h1>Guess the name</h1>	
-		<div>Time left: <span id="minutes"></span><span id="seconds"></span></div>
-		<input id="textBox" type="text" value="Type then press enter" onkeypress ="keyPressed(event)" onclick="clearInput()">
+		<h1>Total Rucall</h1>
+		<p id="sub">How many drag queens from RPDR can you name in only 5 minutes?</p>	
+		<div id="timer"></div>
+		<input id="textBox" type="text" onkeypress ="keyPressed(event)" onclick="clearInput()">
 		<button onclick="checkAnswer()">Submit</button>
 	</div> 
 	<div id="feedback"></div>
 	<br>
 	<div id="answers">
-		<h1> Guessed answers: </h1>
+		<h2> Guessed answers: </h2>
 		<p id="answerCounter"></p>
 		<p id="guessedAnswers"></p>
 	</div>

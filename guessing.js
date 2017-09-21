@@ -5,8 +5,9 @@ var timeLimit = {
 	seconds: 0
 }
 
-function start() {
+function start() {	
 updateCounter(); //chama a função updateCounter() ao inicializar a pagina (veja abaixo)
+document.getElementById('textBox').value = "Type then press enter";
 checkEmptyMessage();
 }
 
@@ -103,10 +104,13 @@ function normalize(x){
 function timer(){
   var min = timeLimit.minutes;
   var sec = timeLimit.seconds;
+  var minString, secString;
 
   timer = setInterval(function(){
-    min >= 10? document.getElementById('minutes').innerHTML=min + ":" : document.getElementById('minutes').innerHTML="0"+ min + ":";
-    sec >= 10? document.getElementById('seconds').innerHTML=sec : document.getElementById('seconds').innerHTML="0"+sec;
+    min >= 10? minString = min : minString = "0" + min; 
+    sec >= 10? secString = sec : secString = "0" + sec;
+
+    document.getElementById('timer').innerHTML = `Time left: ${minString}:${secString}`;
     if( min == 0 && sec ==0) { 
       clearInterval(timer);
       endGame(); 
@@ -170,7 +174,7 @@ function endGame() {
 	}
 
 	addToResults(read);
-
+	document.getElementById('results').innerHTML += `<button onclick="reload()"> Try again? </button>`;
 
 }
 
@@ -190,3 +194,5 @@ function checkEmptyMessage (){
 
 	console.log(x);
 }
+
+function reload(){ location.reload()};
