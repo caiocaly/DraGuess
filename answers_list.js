@@ -314,4 +314,3 @@ var correctAnswers = [
 	{name: ['Trinity "The Tuck" Taylor', 'Trinity Taylor', "Trinity Tuck", "The tuck"]}
 ];
 
-var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada
