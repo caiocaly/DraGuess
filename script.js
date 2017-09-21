@@ -137,10 +137,12 @@ function reload(){ location.reload()};
 function endGame() {
 	let score = guessedAnswers.length;
 	let read = "";
+
 	allElements = document.getElementsByTagName('*');
 	for (i = 0; i < allElements.length; i++){
 		allElements[i].style.visibility = 'hidden';
 	}
+	document.getElementById("results").classList.toggle("main"),
 	document.getElementById('results').style.visibility = "visible";
 	let guessed = guessedAnswers.length;
 	addToResults(`You got ${score} out of ${total}`);
