@@ -34,7 +34,7 @@ var correctAnswers = [
 	{name: ['Bob The Drag Queen', 'Bob, the drag queen', 'Bob'],
 	correctMessage: 'Purse first'},
 
-	{name: ['Carmen Carerra', 'Carmem Carrera', 'Carmen Carera']},
+	{name: ['Carmen Carerra', 'Carmem Carrera', 'Carmen Carera', 'Carmen Carrera']},
 
 	{name: ['Chad Michaels', 'Chad'],
 	correctMessage: "I'm a professional"},
@@ -222,6 +222,8 @@ var correctAnswers = [
 
 	{name: ['Shannel', 'Chanel', 'Shanel', 'Channel'],
 	correctMessage: 'Mrs. Mandarin'},
+
+	{name: ['Sharon Needles', 'Sharing Needles']},
 
 	{name: ['Sonique', 'Sonic']},
 
