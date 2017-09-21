@@ -12,11 +12,16 @@ body {
 	margin-top: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;
-	max-width: 1200px;
-	padding: 25px;
+	width: 90%;
+	max-width: 1000px;
+	padding: 15px;
 	background-color: white;
 	border-radius: 3px;
+}
+
+#results{
+	margin-top: 0px;
+	padding: 0;
 }
 
 
