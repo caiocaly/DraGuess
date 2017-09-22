@@ -19,11 +19,18 @@ body {
 }
 
 input {
+	font-size: 15px;
+	width: 250px;
 	height: 35px;
 	padding: 5px 15px;
 }
 
+input[type=text]:focus {
+
+}
+
 button {
+	width: 100px;
 	height: 35px;
 	padding: 0px 15px;
 	cursor: pointer;

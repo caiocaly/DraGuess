@@ -64,7 +64,8 @@ var correctAnswers = [
 	{name: ['Detox'],
 	correctMessage: 'Naomi campbelling these hoes to the crown... NEXT'},
 
-	{name: ['DiDa Ritz', 'Dita Ritz']},
+	{name: ['DiDa Ritz', 'Dita Ritz'],
+	correctMessage: "DiDa vs. The Princess. Still can't get over it"},
 
 	{name: ['Gia Gunn', 'Gia Gun'],
 	correctMessage: 'Landed like fresh tilapia'},
@@ -92,7 +93,8 @@ var correctAnswers = [
 	{name: ['Jasmine Masters'],
 	correctMessage: 'And I have one thing to say'},
 
-	{name: ['Jessica Wild']},
+	{name: ['Jessica Wild'],
+	correctMessage: "Yessica Wild"},
 
 	{name: ['Jiggly Caliente', 'Caliente', 'Jiggly']},
 
@@ -117,7 +119,8 @@ var correctAnswers = [
 	{name: ['Kennedy Davenport'],
 	correctMessage:"The struggle is real."},
 
-	{name: ['Kenya Michaels']},
+	{name: ['Kenya Michaels'],
+	correctMessage: 'Drag Queen and Beyoncé impersonator'},
 
 	{name: ['Kim Chi'],
 	correctMessage: "I came to DESTROY EVERYONE, with my make-up."},
@@ -134,7 +137,8 @@ var correctAnswers = [
 	{name: ['Latrice', 'Latrice Royale', 'Latrice Royal'],
 	correctMessage: "THE SHADE OF IT ALL"},
 
-	{name: ['Lineysha Sparks', 'Linaysha Sparks', 'Lineisha Sparks']},
+	{name: ['Lineysha Sparks', 'Linaysha Sparks', 'Lineisha Sparks'],
+	correctMessage: "Oh my gosh is one dollar guys"},
 
 	{name: ['Madame LaQueer'],
 	correctMessage: 'Eeeeeeeeeew'},
@@ -143,7 +147,7 @@ var correctAnswers = [
 
 	{name: ['Manila Luzon', 'Manila']},
 
-	{name:['Mariah Balenciaga', 'Mariah', 'Maria']},
+	{name:['Mariah Balenciaga', 'Mariah', 'Maria', 'Maria Balenciaga']},
 
 	{name: ['Max', 'The Max Collective']},
 
@@ -228,7 +232,7 @@ var correctAnswers = [
 	{name: ['Sonique', 'Sonic']},
 
 	{name: ['Stacy Lane Matthews', 'Stacy Lane Mathews', 'Stacy', 'Stacy Lane Mattews'],
-	correctMessage: "Is this couture?"},
+	correctMessage: "That's a lot of fucking money"},
 
 	{name: ['Tammie Brown', 'Tamy Brown', 'Tammy Brown'],
 	correctMessage: "I'm acting."},
@@ -242,7 +246,8 @@ var correctAnswers = [
 	{name: ['The Princess', 'Princess'],
 	correctMessage: "1st Edition Sasha Velour"},
 
-	{name: ['Thorgy Thor', 'Thorgy', 'Torgy Thor']},
+	{name: ['Thorgy Thor', 'Thorgy', 'Torgy Thor'],
+	correctMessage: "Witty catchphrase, y'know what I mean?"},
 
 	{name: ['Trinity K. Bonet', 'Trinity K Bonet', 'Trinity Kardashian Bonet']},
 
@@ -287,7 +292,7 @@ var correctAnswers = [
 	correctMessage: "Oh ;("},
 
 	{name: ["Nina Bo'Nina Brown", 'Nina bonina brown', 'nina brown', 'nina bonina', "Nina Bo'nina"],
-	correctMessage: "Nina, Bo'nina, Banana, Fofana, On season 9 boom boom brown"},
+	correctMessage: "Nina, Bo'nina, Banana, Fofana, on season 9 boom boom Brown"},
 
 	{name: ['Peppermint']},
 
