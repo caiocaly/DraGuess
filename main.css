@@ -1,5 +1,6 @@
 * {
 	font-family: 'Nunito';
+	box-sizing: border-box;
 }
 
 body {
@@ -18,11 +19,6 @@ body {
 	background-color: white;
 	border-radius: 3px;
 }
-
-#results{
-	margin-top: 0px;
-}
-
 
 /* TITULO DO JOGO - IMAGEM */
 #title { 
