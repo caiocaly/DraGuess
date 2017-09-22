@@ -1,9 +1,10 @@
+var version = 1.8;
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada
 var timerStarted = false;
 var total = correctAnswers.length;
 var timeLimit = {
-	minutes: 5,
-	seconds: 0,
+	minutes: 0,
+	seconds: 2,
 	hurryUp: 30,
 	}
 
@@ -12,6 +13,7 @@ function start() {
 	document.getElementById('textBox').value = "Type then press enter";
 	document.getElementById('sub').innerHTML = `How many RPDR contestants can you name in only ${timeLimit.minutes} minutes?`;
 	checkEmptyMessage();
+	document.getElementById('version').innerHTML = `Ver. ${version}, `;
 	}
 
 function updateCounter() { //ela atualiza um contador de respostas certas x quantas faltam

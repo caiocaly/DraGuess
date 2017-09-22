@@ -131,7 +131,7 @@ var correctAnswers = [
 	{name: ['Lashauwn Beyond', 'Lashawn Beyond', 'Lashaun Beyond', 'Lashaun Beyond'],
 	correctMessage: "This is not RuPaul's best friend race!"},
 
-	{name: ['Latrice Royale', 'Latrice Royal'],
+	{name: ['Latrice', 'Latrice Royale', 'Latrice Royal'],
 	correctMessage: "THE SHADE OF IT ALL"},
 
 	{name: ['Lineysha Sparks', 'Linaysha Sparks', 'Lineisha Sparks']},
@@ -141,7 +141,7 @@ var correctAnswers = [
 
 	{name: ['Magnolia Crawford']},
 
-	{name: ['Manila Luzon']},
+	{name: ['Manila Luzon', 'Manila']},
 
 	{name:['Mariah Balenciaga', 'Mariah', 'Maria']},
 
