@@ -1,4 +1,4 @@
-var version = 1.8;
+var version = 1.9;
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada
 var timerStarted = false;
 var total = correctAnswers.length;
