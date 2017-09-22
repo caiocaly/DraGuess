@@ -1,19 +1,19 @@
 var version = 1.9;
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada
-var timerStarted = false;
-var total = correctAnswers.length;
-var timeLimit = {
+var timerStarted = false; //controla o começo do timer
+var total = correctAnswers.length; //var que vai armazenar as respostas corretas
+var timeLimit = { //tempo disponível
 	minutes: 5,
 	seconds: 0,
-	hurryUp: 30,
+	hurryUp: 30, //quando o timer vai começar a piscar
 	}
 
 function start() {	
-	updateCounter(); //chama a função updateCounter() ao inicializar a pagina (veja abaixo)
+	updateCounter();
 	document.getElementById('textBox').value = "Type then press enter";
 	document.getElementById('sub').innerHTML = `How many RPDR contestants can you name in only ${timeLimit.minutes} minutes?`;
-	checkEmptyMessage();
 	document.getElementById('version').innerHTML = `Ver. ${version}, `;
+	checkEmptyMessage();
 	}
 
 function updateCounter() { //ela atualiza um contador de respostas certas x quantas faltam
@@ -121,16 +121,6 @@ function timer(){ // conta o tempo
   }, 1000);
 }
 
-function checkEmptyMessage (){
-	let x =[];
-	for (i=0; i < correctAnswers.length; i++){
-		if (correctAnswers[i].correctMessage == undefined){
-		x.push(correctAnswers[i].name[0]);	
-		}
-	}
-	console.log(x);
-}
-
 function reload(){ location.reload()};
 
 function endGame() {
@@ -181,4 +171,14 @@ function timerBlink(){
 	  	}
 	  	document.getElementById('timer').style.color = currentColor;
 		}, 500);
+}
+
+function checkEmptyMessage (){
+	let x =[];
+	for (i=0; i < correctAnswers.length; i++){
+		if (correctAnswers[i].correctMessage == undefined){
+		x.push(correctAnswers[i].name[0]);	
+		}
+	}
+	console.log(x);
 }
