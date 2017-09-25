@@ -1,4 +1,4 @@
-var version = 1.9;
+var version = 2.0;
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada
 var timerStarted = false; //controla o começo do timer
 var total = correctAnswers.length; //var que vai armazenar as respostas corretas
@@ -8,11 +8,15 @@ var timeLimit = { //tempo disponível
 	hurryUp: 30, //quando o timer vai começar a piscar
 	}
 
+function write(id, content){
+	document.getElementById(id).innerHTML = content;
+}
+
 function start() {	
 	updateCounter();
 	document.getElementById('textBox').value = "Type then press enter";
-	document.getElementById('sub').innerHTML = `How many RPDR contestants can you name in only ${timeLimit.minutes} minutes?`;
-	document.getElementById('version').innerHTML = `Ver. ${version}, `;
+	write('sub', `How many RPDR contestants can you name in only ${timeLimit.minutes} minutes?`);
+	write('version', `Ver. ${version}, `);
 	checkEmptyMessage();
 	}
 
@@ -20,7 +24,7 @@ function updateCounter() { //ela atualiza um contador de respostas certas x quan
 	let toGo = correctAnswers.length; // # respostas que falta acertar
 	let guessed = guessedAnswers.length; //# respostas acertadass
 	let countResult = `${guessed} guessed, ${toGo} to go.`; //texto que vai na tela
-	document.getElementById('answerCounter').innerHTML = countResult;
+	write('answerCounter', countResult);
 	}
 
 function checkAnswer () { //essa função verifica se a resposta está certa
