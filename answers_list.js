@@ -1,6 +1,6 @@
 var correctAnswers = [
 	{name: ['Acid Betty', 'acid beth'],
-	correctMessage: 'No need to adjust your TV sets... This acid trip is all real...' },
+	correctMessage: 'No need to adjust your TV sets... This acid trip is all real...'},
 
 	{name: ['Adore Delano', 'Adore'],
 	correctMessage:'Party!'},
@@ -320,4 +320,10 @@ var correctAnswers = [
 
 	{name: ['Trinity "The Tuck" Taylor', 'Trinity Taylor', "Trinity Tuck", "The tuck"]}
 ];
+
+function idThisCrap (array) {
+	for (i = 0; i < array.length; i++){
+		array[i].id = i;
+	}
+	}
 
