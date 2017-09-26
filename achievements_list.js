@@ -28,20 +28,15 @@ class Achievement {
 
 
 function checkAchievements () {
-		for (i = 0; i < achievementsList; i++) {
-			var conditions = achievementsList[i].condition.sort(function(a, b){return a-b});
-			x = listOfGuessedIndexes.indexOf(conditions);
-
-			if (x >= 0){
-			console.log('é igual');		
-			} else { console.log ('não é');}
-		}
+	achievementsList.forEach(function(item, index){
+		
+	});
 }
+
 
 
 function createAchievements () {
 	achievementsList = [ 
-	new Achievement ("all", "JIMI JIMI AJA", "Só drags que contém 'aja' no nome kkkk", ['Aja', 'Raja']),
-	new Achievement ("all", "Thanks for noticing me senpai", 'Acertou a rainha das lixas', ['Alisa Summers'])
+	new Achievement ("all", "JIMI JIMI AJA", "Só drags que contém 'aja' no nome kkkk", ['acid betty', 'adore']),
 ]
 }

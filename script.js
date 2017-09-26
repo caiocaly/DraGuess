@@ -77,10 +77,11 @@ function checkAnswer () { //essa função verifica se a resposta está certa
 
 	checkAchievements();
 	console.log("list of guessed indexes: " + listOfGuessedIndexes);
-	console.log("List of achievements: " + achievementsList)
+	console.log("List of achievements: " + achievementsList.length)
 
-	console.log(achievementsList[1].condition);
-	console.log(achievementsList[1].achieved);
+
+	console.log("Position 0 conditions " + achievementsList[0].condition);
+	console.log("Has achievement [0] been achieved? " + achievementsList[0].achieved);
 }
 
 function keyPressed (e) { //checa se o usuário apertou enter
