@@ -1,14 +1,24 @@
 var version = 2.0;
+var releaseDate = '27.09.2017';
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada
 var listOfGuessedIndexes = [];
 var achievementsList = [];
 var timerStarted = false; //controla o começo do timer
 var total = correctAnswers.length; //var que vai armazenar as respostas corretas
 var timeLimit = { //tempo disponível
-	minutes: 0,
-	seconds: 34,
+	minutes: 5,
+	seconds: 0,
 	hurryUp: 30, //quando o timer vai começar a piscar
 	}
+
+function callPatchNotes (){
+	var patchNotes = 
+	`Version ${version}
+	Released  ${releaseDate}
+	Few improvements in drag name detection. 
+	Implemented achievements.`;
+	alert(patchNotes);
+}
 
 function write(id, content){
 	document.getElementById(id).innerHTML = content;
@@ -20,7 +30,7 @@ function start() {
 	updateCounter();
 	document.getElementById('textBox').value = "Type then press enter";
 	write('sub', `How many RPDR contestants can you name in only ${timeLimit.minutes} minutes?`);
-	write('version', `Ver. ${version}, `);
+	write('version', `<strong><span class="clickable" onclick="callPatchNotes()">Ver. ${version}, </strong></span>`);
 	// checkEmptyMessage();
 	console.log("Guessed indexes: " + listOfGuessedIndexes);
 	}
@@ -193,4 +203,15 @@ function checkEmptyMessage (){
 		}
 	}
 	console.log(x);
+}
+
+function snackbar() {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar")
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
