@@ -32,31 +32,26 @@ function checkAchievements () {
 	achievementsList.forEach(function(item, index){
 		switch (item.type) {
 			case 1:
-			if (item.achieved === false) {
-				for (i = 0; i < item.condition.length; i++ ) {
-					if (listOfGuessedIndexes.indexOf(item.condition[i]) === -1){
-						break;
-					} else if (i === (item.condition.length - 1)) {
-						item.achieved = true;
-					}
-				}
-
-				if (item.achieved === true) {alert('Achievement unlocked!')};
+				var target = listOfGuessedIndexes;
 				break;
-			}//fim do if do case 1
-
 			case 2:
-
-		} //fim do switch todo
-	} //fim da função contida no foreach
-); //fim do  foreach 
+				var target = listOfGuessedIndexes.slice(-item.condition.length);
+		} 
+		if (item.achieved === false) { // só verifica achievements ainda não alcançados
+			for (i = 0; i < item.condition.length; i++ ) {
+				if (target.indexOf(item.condition[i]) === -1) { break 
+				} else if (i === (item.condition.length - 1)) {	item.achieved = true };
+			}
+			if (item.achieved === true) {alert(item.title)};
+		} //fim do if
+	}); //fim do  foreach e de sua função
 } //fim da função
 
 
 function createAchievements () {
 	achievementsList = [ 
 	new Achievement (
-		1,
+		2,
 		"Girl look how orange you fucking look", 
 		"Some healthy sisterly rivalry", 
 		"Guess both Coco Montrese and ALyssa Edwards", 

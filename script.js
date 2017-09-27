@@ -73,15 +73,7 @@ function checkAnswer () { //essa função verifica se a resposta está certa
 	document.getElementById('feedback').style.color = feedbackColor;
 	document.getElementById('feedback').innerHTML = feedbackTxt;
 	clearInput();
-
-
 	checkAchievements();
-	console.log("list of guessed indexes: " + listOfGuessedIndexes);
-	console.log("List of achievements: " + achievementsList.length)
-
-
-	console.log("Position 0 conditions " + achievementsList[0].condition);
-	console.log("Has achievement [0] been achieved? " + achievementsList[0].achieved);
 }
 
 function keyPressed (e) { //checa se o usuário apertou enter
