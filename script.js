@@ -1,5 +1,8 @@
 var version = 2.0;
+var releaseDate = '27.09.2017';
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada
+var listOfGuessedIndexes = [];
+var achievementsList = [];
 var timerStarted = false; //controla o começo do timer
 var total = correctAnswers.length; //var que vai armazenar as respostas corretas
 var timeLimit = { //tempo disponível
@@ -8,16 +11,28 @@ var timeLimit = { //tempo disponível
 	hurryUp: 30, //quando o timer vai começar a piscar
 	}
 
+function callPatchNotes (){
+	var patchNotes = 
+	`Version ${version}
+	Released  ${releaseDate}
+	Few improvements in drag name detection. 
+	Implemented achievements.`;
+	alert(patchNotes);
+}
+
 function write(id, content){
 	document.getElementById(id).innerHTML = content;
 }
 
 function start() {	
+	idThisCrap(correctAnswers);
+	createAchievements();
 	updateCounter();
 	document.getElementById('textBox').value = "Type then press enter";
 	write('sub', `How many RPDR contestants can you name in only ${timeLimit.minutes} minutes?`);
-	write('version', `Ver. ${version}, `);
-	checkEmptyMessage();
+	write('version', `<strong><span class="clickable" onclick="callPatchNotes()">Ver. ${version}, </strong></span>`);
+	// checkEmptyMessage();
+	console.log("Guessed indexes: " + listOfGuessedIndexes);
 	}
 
 function updateCounter() { //ela atualiza um contador de respostas certas x quantas faltam
@@ -34,7 +49,7 @@ function checkAnswer () { //essa função verifica se a resposta está certa
 		timerStarted = true;
 	}
 	guess = normalize(document.getElementById("textBox").value);
-	console.log("guessed " + guess);
+	console.log("User guessed " + guess);
 	for (i = 0; i < correctAnswers.length; i++) { //verifica se o input dado pelo usuário está na lista de respostas que falta acertar
 		for (j = 0; j < correctAnswers[i].name.length; j++){
 			let answerBeingChecked = normalize(correctAnswers[i].name[j]);
@@ -68,6 +83,7 @@ function checkAnswer () { //essa função verifica se a resposta está certa
 	document.getElementById('feedback').style.color = feedbackColor;
 	document.getElementById('feedback').innerHTML = feedbackTxt;
 	clearInput();
+	checkAchievements();
 }
 
 function keyPressed (e) { //checa se o usuário apertou enter
@@ -87,6 +103,7 @@ function clearInput() { //limpa caixa de input
 }
 
 function transferDrag(position){ //tira uma drag de um array e bota no outro
+	listOfGuessedIndexes.push(correctAnswers[position].id);
 	let dragTransfer = correctAnswers.splice(position,1); 
 	guessedAnswers.push(dragTransfer[0]);
 }
@@ -111,6 +128,7 @@ function timer(){ // conta o tempo
 	  document.getElementById('timer').innerHTML = `Time left: ${minString}:${secString}`;
 	  if( min == 0 && sec ==0) { 
 	      clearInterval(timer);
+	      clearInterval(blink);
 	      endGame(); 
 	    };
 	  if (sec == 0) {
@@ -133,29 +151,29 @@ function endGame() {
 	document.getElementById('mainBox').innerHTML ="";
 	let guessed = guessedAnswers.length;
 	switch (true) {
-		case (score == 0):
-			read = "WHAT? Do you even know what a drag queen is?";
+		case (score == total):
+			read = "Parabéns Junior! ;)"
 			break;
-		case (score > 0 && score <=10):
-			read = "Tell me honestly: did you ever watch the show?";
-			break;
-		case (score >10 && score <=20):
-			read = "DO you even like RPDR? (That stands for RuPaul's Drag Race, in case you don't know)";
-			break;
-		case (score >20 && score <=40):
-			read = "Nice job, you remember quite a few.";
-			break;
-		case (score >40 && score <=60):
-			read = "Excellent!"
-			break;
-		case (score >60 && score <=80):
-			read = "YASSS QUEEN! Impressive memory!";
-			break;
-		case (score> 80 && score<total):
+		case (score> 80):
 			read = "COME THROUGH MAMA! You're a champion!!! How can you even type so fast?"
 			break;
-		case (score == total):
-			read = "You cheated."
+		case (score >60):
+			read = "YASSS QUEEN! Impressive memory!";
+			break;
+		case (score >40):
+			read = "Excellent!"
+			break;
+		case (score >20):
+			read = "Nice job, you remember quite a few.";
+			break;
+		case (score >10):
+			read = "DO you even like RPDR? (That stands for RuPaul's Drag Race, in case you don't know)";
+			break;
+		case (score > 0):
+			read = "Tell me honestly: did you ever watch the show?";
+			break;
+		default:
+			read = "WHAT? Do you even know what a drag queen is?";
 			break;
 	}
 
@@ -167,11 +185,11 @@ function endGame() {
 
 function timerBlink(){
 	var currentColor;
-	setInterval(function(){
-	  	if (currentColor != 'red'){
-	  		currentColor = "red";
+	blink = setInterval(function(){
+	  	if (currentColor !== 'red'){
+	  		currentColor = 'red';
 	  	} else {
-	  		currentColor = "black";
+	  		currentColor = 'black';
 	  	}
 	  	document.getElementById('timer').style.color = currentColor;
 		}, 500);
@@ -185,4 +203,15 @@ function checkEmptyMessage (){
 		}
 	}
 	console.log(x);
+}
+
+function snackbar() {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar")
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
