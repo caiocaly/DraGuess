@@ -58,7 +58,7 @@ var correctAnswers = [
 
 	{name: ['Delta Work']},
 
-	{name: ['Derrick Barry', 'Darrick Barry', 'Derrick Berry', 'Darrick Berry', 'Derrick'],
+	{name: ['Derrick Barry', 'Darrick Barry', 'Derrick Berry', 'Darrick Berry'],
 	correctMessage: "If I want to do ratchet drag next week, can you give me any tips?"},
 
 	{name: ['Detox'],
@@ -205,7 +205,7 @@ var correctAnswers = [
 
 	{name: ['Raven']},
 
-	{name: ['Rebecca Glasscock', 'Rebeca Glasscock'],
+	{name: ['Rebecca Glasscock', 'Rebeca Glasscock', 'Rebecca'],
 	correctMessage: 'Rocker star forever in our hearts'},
 
 	{name: ['Robbie Turner', 'Rob Turner', 'Robie Turner'],
@@ -276,7 +276,7 @@ var correctAnswers = [
 	{name: ['Willam'],
 	correctMessage: "It's too late to Rupologize"},
 
-	{name: ['Yara Sofia'],
+	{name: ['Yara Sofia', 'Yara'],
 	correctMessage: "Echa pa'lante!"},
 
 	// {name: ['Ornatia']},
