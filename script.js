@@ -30,7 +30,7 @@ function start() {
 	document.getElementById('textBox').value = "Type then press enter";
 	write('sub', `How many RPDR contestants can you name in only ${timeLimit.minutes} minutes?`);
 	write('version', `<strong><span class="clickable" onclick="callPatchNotes()">Ver. ${version}, </strong></span>`);
-	// checkEmptyMessage();
+	checkEmptyMessage();
 	console.log("Guessed indexes: " + listOfGuessedIndexes);
 	}
 
@@ -206,6 +206,7 @@ function checkEmptyMessage (){
 }
 
 function snackbar() {
+	// como editar oc onteudo do snackbar?
     // Get the snackbar DIV
     var x = document.getElementById("snackbar")
 

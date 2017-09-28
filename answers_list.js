@@ -20,7 +20,8 @@ var correctAnswers = [
 	{name: ['Alyssa Edwards', 'Alissa Edwards', 'Alisa Edwards', 'Alysa Edwards'],
 	correctMessage: "*pops tongue*"},
 
-	{name: ['April Carrión', 'April Carrion', 'April Carion', 'April Caryon', 'April']},
+	{name: ['April Carrión', 'April Carrion', 'April Carion', 'April Caryon', 'April'],
+	correctMessage: "Ay dios mio!"},
 
 	{name: ['Bebe Zahara Benet', 'bebe zahara', 'Bebe'],
 	correctMessage: "CAMAROON!!"},
@@ -34,7 +35,8 @@ var correctAnswers = [
 	{name: ['Bob The Drag Queen', 'Bob, the drag queen', 'Bob'],
 	correctMessage: 'Purse first'},
 
-	{name: ['Carmen Carrera', 'Carmem Carrera', 'Carmen Carerra', 'Carmen Carera']},
+	{name: ['Carmen Carrera', 'Carmem Carrera', 'Carmen Carerra', 'Carmen Carera'],
+	correctMessage: 'Is this a real porcupine?'},
 
 	{name: ['Chad Michaels', 'Chad'],
 	correctMessage: "I'm a professional"},
@@ -51,12 +53,14 @@ var correctAnswers = [
 	{name: ['Cynthia Lee Fontaine', 'Cynthia lee fontain', 'Cucu'],
 	correctMessage: 'HOLA MIS AMORES. Are you ready to see my Cucu.... AGAIN?'},
 
-	{name: ['Darienne Lake', 'Darianne Lake', 'Dariene Lake', 'darienne']},
+	{name: ['Darienne Lake', 'Darianne Lake', 'Dariene Lake', 'darienne'],
+	correctMessage: "Edited out"},
 
 	{name: ['Dax Exclamationpoint', 'Daxclamation point', 'dax'],
 	correctMessage: 'Do you think my ass looks square?'},
 
-	{name: ['Delta Work']},
+	{name: ['Delta Work'],
+	correctMessage: "Did i read? Absolutely. Did i talk shit? Absolutely."},
 
 	{name: ['Derrick Barry', 'Darrick Barry', 'Derrick Berry', 'Darrick Berry'],
 	correctMessage: "If I want to do ratchet drag next week, can you give me any tips?"},
@@ -85,7 +89,8 @@ var correctAnswers = [
 	{name: ['Jade Sotomayor', 'Jade'],
 	correctMessage: "I bet you didn't know her last name"},
 
-	{name: ['Jade Jolie']},
+	{name: ['Jade Jolie'],
+	correctMessage: 'GET HER, JADE!'},
 
 	{name: ['Jaidynn Diore Fierce', 'Jaydinn Diore Fierce', 'Jaydin Diore Fierce', 
 	'Jaiden Diore Fierce', 'Jayden Diore Fierce', 'Jaydinn', 'Jaydinn', 'Jayden', 'Jaydin', 'Jaydinn'],
@@ -97,7 +102,8 @@ var correctAnswers = [
 	{name: ['Jessica Wild'],
 	correctMessage: "Yessica Wild"},
 
-	{name: ['Jiggly Caliente', 'Caliente', 'Jiggly']},
+	{name: ['Jiggly Caliente', 'Caliente', 'Jiggly'],
+	correctMessage: 'May I call you "Jiggly"?'},
 
 	{name: ['Jinkx Monsoon', 'Jinx Monsoon', 'Jinxk Monsoon','Jynkx Monsoon', 
 	'Jynx Monsoon', 'Jynxk Monsoon', 'jynkx', 'Jinkx', 'Jinx', 'Jynx'],
@@ -145,27 +151,35 @@ var correctAnswers = [
 	{name: ['Madame LaQueer'],
 	correctMessage: 'Eeeeeeeeeew'},
 
-	{name: ['Magnolia Crawford', 'Magnolia']},
+	{name: ['Magnolia Crawford', 'Magnolia'],
+	correctMessage: 'Magnooooooooooooolia Crawford'},
 
-	{name: ['Manila Luzon', 'Manila']},
+	{name: ['Manila Luzon', 'Manila'],
+	correctMessage: "Deigner shoeeeeeeeeeeeez"},
 
-	{name:['Mariah Paris Balenciaga', 'Mariah Balenciaga', 'Mariah', 'Maria', 'Maria Balenciaga']},
+	{name:['Mariah Paris Balenciaga', 'Mariah Balenciaga', 'Mariah', 'Maria', 'Maria Balenciaga'],
+	correctMessage: "Elephant shoe, cantaloupe and shalabbalabba tuna"},
 
-	{name: ['Max', 'The Max Collective']},
+	{name: ['Max', 'The Max Collective'],
+	correctMessage: "Sharon Needles professional impersonator" },
 
 	{name: ['Milan'],
 	correctMessage: "*rubs awkwardly on the floor*"},
 
-	{name: ['Milk']},
+	{name: ['Milk'],
+	correctMessage: "We're all a bunch of clowns, aren't we?"},
 
-	{name: ['MiMi Imfurst', 'Mimi imfirst']},
+	{name: ['MiMi Imfurst', 'Mimi imfirst'],
+	correctMessage: "GUESS WHAT, MIMI? WE DID"},
 
 	{name: ['Miss Fame'],
 	correctMessage: "How's your head?"},
 
-	{name: ['Monica Beverly Hillz', 'Monica Beverly Hills']},
+	{name: ['Monica Beverly Hillz', 'Monica Beverly Hills'],
+	correctMessage: "Don't be shady, be a lady"},
 
-	{name: ['Morgan McMichaels', 'Morgan']},
+	{name: ['Morgan McMichaels', 'Morgan'],
+	correctMessage: "Go fix your mug"},
 
 	{name: ['Mrs. Kasha Davis', 'Kasha Davis'],
 	correctMessage: "I'm ho~ome"},
@@ -182,17 +196,20 @@ var correctAnswers = [
 	{name: ['Nicole Paige Brooks', 'God', 'NPB', 'Nicole Page Brooks'],
 	correctMessage: 'From Atlanta, Georgia'},
 
-	{name: ['Nina Flowers']},
+	{name: ['Nina Flowers'],
+	correctMessage: "Ay, loca"},
 
 	{name: ['Ongina'],
 	correctMessage: "<3"},
 
-	{name:  ['Pandora Boxxx', 'Pandora Box', 'Pandora Boxx']},	
+	{name:  ['Pandora Boxxx', 'Pandora Box', 'Pandora Boxx'],
+	correctMessage: "RASHBERRIES"},	
 
 	{name: ['Pearl'],
-	correctMessage: "Is there something on my face:"},
+	correctMessage: "Is there something on my face?"},
 
-	{name: ['Penny Tration']},
+	{name: ['Penny Tration'],
+	correctMessage: "Retired in Panama"},
 
 	{name: ["PhiPhi O'hara", "phiphi ohara", "phi phi"],
 	correctMessage: "I SAID I FELT"},
@@ -203,7 +220,8 @@ var correctAnswers = [
 	{name: ['Raja Gemini', 'Raja'],
 	correctMessage: "A winner is a winner, né mores?"},
 
-	{name: ['Raven']},
+	{name: ['Raven'],
+	correctMessage: "Oh, Raven, you never learn."},
 
 	{name: ['Rebecca Glasscock', 'Rebeca Glasscock', 'Rebecca'],
 	correctMessage: 'Rocker star forever in our hearts'},
@@ -222,7 +240,7 @@ var correctAnswers = [
 	correctMessage: 'SAY HELLO TO MY LITTLE FRIENDS'},
 
 	{name: ['Serena ChaCha', 'Serena'],
-	correctMessage: "Except for Serena AAAAH HAHA"},
+	correctMessage: "Except for Serena"},
 
 	{name: ['Shangela Laquifa Wadley', 'Shangela'],
 	correctMessage: 'HALELLOO'},
@@ -230,9 +248,11 @@ var correctAnswers = [
 	{name: ['Shannel', 'Chanel', 'Shanel', 'Channel'],
 	correctMessage: 'Mrs. Mandarin'},
 
-	{name: ['Sharon Needles', 'Sharing Needles', 'Sharon']},
+	{name: ['Sharon Needles', 'Sharing Needles', 'Sharon'],
+	correctMessage: "Go back to party city where you belong!"},
 
-	{name: ['Sonique', 'Sonic']},
+	{name: ['Sonique', 'Sonic'],
+	correctMessage: "Remember her as Lady Gaga at the snatch game? me neither"},
 
 	{name: ['Stacy Lane Matthews', 'Stacy Lane Mathews', 'Stacy', 'Stacy Lane Mattews'],
 	correctMessage: "That's a lot of fucking money"},
@@ -252,9 +272,12 @@ var correctAnswers = [
 	{name: ['Thorgy Thor', 'Thorgy', 'Torgy Thor'],
 	correctMessage: "Witty catchphrase, y'know what I mean?"},
 
-	{name: ['Trinity K. Bonet', 'Trinity K Bonet', 'Trinity Kardashian Bonet', 'TKB', 'T.K.B.']},
+	{name: ['Trinity K. Bonet', 'Trinity K Bonet', 'Trinity Kardashian Bonet',
+	'TKB', 'T.K.B.'],
+	correctMessage: "CALM DOWN, BEYONCE"},
 
-	{name:  ['Trixie Mattel', 'Trixie Matel', 'Trixie']},
+	{name:  ['Trixie Mattel', 'Trixie Matel', 'Trixie'],
+	correctMessage: "OH HONEY THANKS GIVING? OH HONEY THANKS LIVIIIIIIIIIIIIIIIIING"},
 
 	{name: ['Tyra Sanchez', 'Tyra Sanches', 'Tyra', 'The other Tyra'],
 	correctMessage: 'WHY U TALKING?'},
@@ -265,7 +288,8 @@ var correctAnswers = [
 	{name: ['Victoria "Porkchop" Parker', 'Victoria Porkchop', 'Victoria Porkchop Parker', 'Vitoria Porkchop'],
 	correctMessage: 'Hey, Porkchop'},
 
-	{name: ['Violet Chachki', 'Violet Chachkey', 'Violet']},
+	{name: ['Violet Chachki', 'Violet Chachkey', 'Violet'],
+	correctMessage: "COME THROUGHHHHHHHHHHHHHHHHHHHHHHHH"},
 
 	{name: ['Vivacious'],
 	correctMessage: "Mother has arrived."},
@@ -297,16 +321,20 @@ var correctAnswers = [
 	{name: ["Nina Bo'Nina Brown", 'Nina bonina brown', 'nina brown', 'nina bonina', "Nina Bo'nina"],
 	correctMessage: "Nina, Bo'nina, Banana, Fofana, on season 9 boom boom Brown"},
 
-	{name: ['Peppermint']},
+	{name: ['Peppermint'],
+	correctMessage: "P-E-P-P-E-R-bitch you know the rest"},
 
-	{name: ['Sasha Velour', 'Sasha Velur', 'Sasha Veluor']},
+	{name: ['Sasha Velour', 'Sasha Velur', 'Sasha Veluor'],
+	correctMessage: "DONT JOKE ABOUT THAT"},
 
-	{name: ["Eureka O'Hara", "eureka ohara", "eureka"]},
+	{name: ["Eureka O'Hara", "eureka ohara", "eureka"],
+	correctMessage: "Could you shut the fuck up? Thank you"},
 
 	{name: ["Charlie Hides", "Charlie Hydes"],
 	correctMessage: "And I'm *** years old"},
 
-	{name: ['Alexis Michelle', 'Alexis Lichelle', 'Alexis Michele', 'other alexis']},
+	{name: ['Alexis Michelle', 'Alexis Lichelle', 'Alexis Michele', 'other alexis'],
+	correctMessage: "Did you catch the T in Koont?"},
 
 	{name: ["Aja"],
 	correctMessage: `You're perfect 💯, you're beautiful 👰, you look 👀 like Linda Evangelista 💃.. 
@@ -321,7 +349,8 @@ var correctAnswers = [
 	{name: ['Shea Couleé', 'Shea Coulee', 'Shea coule', 'Xeculê', 'xecule', "Shea"],
 	correctMessage: "And I didn't come here to play, I came to slay"},
 
-	{name: ['Trinity "The Tuck" Taylor', 'Trinity Taylor', "Trinity Tuck", "The tuck"]}
+	{name: ['Trinity "The Tuck" Taylor', 'Trinity Taylor', "Trinity Tuck", "The tuck",],
+	correctMessage: 'I CALL SHADE'}
 ];
 
 function idThisCrap (array) {

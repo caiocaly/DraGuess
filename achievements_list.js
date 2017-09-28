@@ -160,8 +160,8 @@ function createAchievements () {
 	//// TYPE 2
 	new Achievement (
 		2,
-		"",
-		"",
+		"Facecrack of the century",
+		"Guess Alyssa and Coco in succession",
 		['Alyssa Edwards', 'Coco Montrese'],
 		"nacho"
 		),
@@ -175,15 +175,39 @@ function createAchievements () {
 	new Achievement (
 		2,
 		"Rolaskatox",
-		"Guess Roxxxy, Alaska and Detox in succession",
+		"Guess Roxxxy, Alaska and Detox in sucession",
 		['Roxxxy', 'Alaska', 'Detox']),
+
 
 	new Achievement (
 		1,
 		"WOW! You got an achievement!",
 		"Yeah, just like that. The game is mine and I do what i want",
-		"Chute 'raja'",
-		['Raja'])
+		['Raja']),
+
+	new Achievement (
+		1,
+		"C U N T",
+		"Guess all winners from the show",
+		['Bebe', 'Tyra', 'Raja', 'Sharon', 'Jinkx',
+		'Bianca', 'Violet', 'Bob', 'Chad', 'Sasha Velour', 'Alaska']
+		),
+
+	new Achievement (
+		1,
+		"Gone but (not) remembered",
+		"Guess all queens who went were sent home first (doesn't count all stars)",
+		['Victoria Porkchop', 'Nicole Paige Brooks', 'Venus Dlite', 'Alisa Summers',
+		'Penny Tration', 'Magnolia Crawford', 'Kelly Mantle', 'Tempest DuJour', 
+		'Naysha Lopez', 'Jaymes Mansfield']
+		),
+
+	new Achievement (
+		1,
+		"You're a champion, greatest of them all",
+		"Guess all queens",
+		[]
+		)
 ]
 }
 
