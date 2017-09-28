@@ -14,7 +14,7 @@ function callPatchNotes (){
 	var patchNotes = 
 	`Created by Caio Caly.
 	Version ${version}
-	Special thanks to Luvisorto`;
+	Special thanks to Bruno Luvizotto`;
 	alert(patchNotes);
 }
 
