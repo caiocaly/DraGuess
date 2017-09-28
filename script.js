@@ -1,4 +1,4 @@
-var version = 2.1;
+var version = 2.2;
 var releaseDate = '28.09.2017';
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada
 var listOfGuessedIndexes = [];
