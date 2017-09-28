@@ -1,5 +1,5 @@
-var version = 2.0;
-var releaseDate = '27.09.2017';
+var version = 2.1;
+var releaseDate = '28.09.2017';
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada
 var listOfGuessedIndexes = [];
 var achievementsList = [];
@@ -15,8 +15,7 @@ function callPatchNotes (){
 	var patchNotes = 
 	`Version ${version}
 	Released  ${releaseDate}
-	Few improvements in drag name detection. 
-	Implemented achievements.`;
+	Added descriptions to achievements`;
 	alert(patchNotes);
 }
 

@@ -143,7 +143,7 @@ function createAchievements () {
 		'Raven', 'Alexis Mateo', 'Yara Sofia', 'Latrice Royale',
 		'Manila Luzon', 'Nina Flowers', 'Tammie Brown', 'Mimi Imfurst'],
 		'allstars1'
-		)
+		),
 
 	new Achievement (
 		1,
@@ -153,7 +153,7 @@ function createAchievements () {
 		"Tatianna", "Phi Phi O'Hara", "Ginger Minj", "Adore Delano", 
 		"Coco Montrese"],
 		'allstars2'
-		)
+		),
 
 
 
