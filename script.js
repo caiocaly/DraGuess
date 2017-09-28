@@ -13,9 +13,9 @@ var timeLimit = { //tempo disponível
 
 function callPatchNotes (){
 	var patchNotes = 
-	`Version ${version}
-	Released  ${releaseDate}
-	Added descriptions to achievements`;
+	`Created by Caio Caly.
+	Version ${version}
+	Special thanks to Luvisorto`;
 	alert(patchNotes);
 }
 
