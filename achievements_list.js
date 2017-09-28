@@ -153,11 +153,19 @@ function createAchievements () {
 		"Tatianna", "Phi Phi O'Hara", "Ginger Minj", "Adore Delano", 
 		"Coco Montrese"],
 		'allstars2'
-		),
+		),	
 
 
 
 	//// TYPE 2
+	new Achievement (
+		2,
+		"",
+		"",
+		['Alyssa Edwards', 'Coco Montrese'],
+		"nacho"
+		),
+
 	new Achievement (
 		2,
 		"RPDR OTP",
