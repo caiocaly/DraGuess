@@ -1,3 +1,4 @@
+var version = 2.4;
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada
 var listOfGuessedIndexes = [];
 var achievementsList = [];
@@ -12,7 +13,7 @@ var timeLimit = { //tempo disponível
 function callPatchNotes (){
 	var patchNotes = 
 	`Created by Caio Caly.
-	Version 2.3
+	Version ${version}
 	Special thanks to Luvisorto`;
 	alert(patchNotes);
 }
