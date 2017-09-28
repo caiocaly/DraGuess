@@ -1,5 +1,3 @@
-var version = 2.3;
-var releaseDate = '28.09.2017';
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada
 var listOfGuessedIndexes = [];
 var achievementsList = [];
@@ -14,7 +12,7 @@ var timeLimit = { //tempo disponível
 function callPatchNotes (){
 	var patchNotes = 
 	`Created by Caio Caly.
-	Version ${version}
+	Version 2.3
 	Special thanks to Luvisorto`;
 	alert(patchNotes);
 }
@@ -74,7 +72,7 @@ function checkAnswer () { //essa função verifica se a resposta está certa
 				}
 			}
 		}
-		isRepeated ? feedbackTxt= `You alredy guessed ${repeatedName}` : feedbackTxt = 'Incorrect answer';
+		isRepeated ? feedbackTxt= `You already guessed ${repeatedName}` : feedbackTxt = 'Incorrect answer';
 	}
 	updateCounter();
 	let feedbackColor;
