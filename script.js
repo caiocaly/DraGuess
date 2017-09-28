@@ -4,7 +4,7 @@ var guessedAnswers =[]; //array que vai armazenar as respostas que já foram ace
 var listOfGuessedIndexes = [];
 var achievementsList = [];
 var timerStarted = false; //controla o começo do timer
-var total = correctAnswers.length; //var que vai armazenar as respostas corretas
+var total = correctAnswers.length;
 var timeLimit = { //tempo disponível
 	minutes: 5,
 	seconds: 0,
@@ -131,6 +131,7 @@ function timer(){ // conta o tempo
 	      clearInterval(blink);
 	      endGame(); 
 	    };
+
 	  if (sec == 0) {
 	      min--;
 	      sec=59;

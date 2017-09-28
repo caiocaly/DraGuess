@@ -1,6 +1,6 @@
 class Achievement {
 	constructor (type, title, subtitle, howToGet, condition, source) {
-		this.type = type;
+		this._type = type;
 		this.title = title;
 		this.subtitle = subtitle;
 		this.howToGet = howToGet;
@@ -95,7 +95,7 @@ function createAchievements () {
 		1,
 		"Season 5", 
 		" :)", 
-		"Guess all season four queens", 
+		"Guess all season five queens", 
 		['Jinkx', 'Alaska', 'Roxxxy', 'Detox', 'Coco Montrese', 'ALyssa Edwards',
 		'Ivy Winters', 'Jade Jolie', 'Lineysha Sparx', 'Honey Mahoganny', 'Vivianne Pinay',
 		'Monica Beverly Hillz', 'Serena Chacha', 'Penny Tration'],
@@ -105,14 +105,48 @@ function createAchievements () {
 		1,
 		"Season 6", 
 		" :)", 
-		"Guess all season four queens", 
+		"Guess all season six queens", 
 		['Bianca', 'Adore', 'Courtney', 'Darienne', 'Ben DeLaCreme', 'Joslyn Fox',
 		'Trinity K. Bonet', 'Laganja', 'Milk', 'Gia', 'April Carrion', 'Vivacious', 
 		'Magnolia', 'Kelly Mantle'],
 		'season6'),
 
+	new Achievement (
+		1,
+		"Season 7", 
+		" :)", 
+		"Guess all season seven queens", 
+		['Violet Chachki', 'Ginger Minj', 'Pearl', 'Kennedy Davenport',
+		'Katya', 'Trixie Mattel', 'Miss Fame', 'Jaidynn Diore Fierce',
+		'Max Max', 'Kandy Ho', 'Mrs. Kasha Davis', 'Jasmine Masters',
+		'Sasha Belle', 'Tempest DuJour'],
+		'season7'),
 
-	////
+	new Achievement (
+		1,
+		"Season 8", 
+		" :)", 
+		"Guess all season four queens", 
+		['Bob', 'Kim Chi', 'Naomi Smalls', 'Chi Chi DeVayne',
+		'Derrick Barry', 'Thorgy Thor', 'Robbie Turner',
+		'Acid Betty', 'Naysha Lopez', 'Cynthia Lee Fontaine',
+		'Dax ExclamationPoint','Laila McQueen'],
+		'season8'),
+
+
+	new Achievement (
+		1,
+		"Season 9", 
+		" :)", 
+		"Guess all season four queens", 
+		['Sasha Velour', 'Peppermint', 'Shea Couleé', 'Trinity Taylor', 
+		'Alexis Michelle', "Nina Bo'nina Brown", 'Valentina',
+		'Farrah Moan', 'Aja', 'Cynthia Lee Fontaine', 'Eureka',
+		'Charlie Hides', 'Kimora Blac', 'Jaymes Mansfield']	,
+		'season9'),
+
+
+	//// TYPE 2
 	new Achievement (
 		2,
 		"Shipping Queen",
