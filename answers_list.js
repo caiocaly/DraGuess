@@ -324,7 +324,8 @@ var correctAnswers = [
 	{name: ['Trinity "The Tuck" Taylor', 'Trinity Taylor', "Trinity Tuck", "The tuck"]}
 ];
 
-function idThisCrap (array) {
+function idT
+hisCrap (array) {
 	for (i = 0; i < array.length; i++){
 		array[i].id = i;
 	}

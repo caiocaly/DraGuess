@@ -1,9 +1,8 @@
 class Achievement {
-	constructor (type, title, subtitle, howToGet, condition, source) {
-		this._type = type;
+	constructor (type, title, subtitle, condition, source) {
+		type === 1 || type === 2 ? this.type = type : console.log(title + "'s type is not valid");
 		this.title = title;
 		this.subtitle = subtitle;
-		this.howToGet = howToGet;
 		this.condition = this.indexDrags(condition);
 		this.achieved = false;
 		source ? this.source = "assets/achievements/img_" + source + ".png" : 
@@ -20,7 +19,7 @@ class Achievement {
 					let answerBeingChecked = normalize(correctAnswers[i].name[j]);
 					if (currentCondition == answerBeingChecked){
 						indexes.push(correctAnswers[i].id);
-					}
+					}  
 				}
 			}
 
@@ -54,18 +53,16 @@ function createAchievements () {
 	achievementsList = [ 
 	new Achievement (
 		1,
-		"Season 1", 
-		"Start your engines!", 
-		"Guess all season one queens", 
+		"Everything looks good in low-res", 
+		"Guess all season 1 queens", 
 		['bebe zahara benet', 'nina flowers', 'shannel', 'ongina', 
 		'jade', 'akashia', 'tammie brown', 'victoria porchop'],
 		'season1'),
 
 	new Achievement (
 		1,
-		"Season 2", 
-		"Tyra won fair and square", 
-		"Guess all season two queens", 
+		"Raven was robbed (was she really, though?)", 
+		"Guess all season 2 queens", 
 		['Tyra Sanchez', 'Raven', 'Jujubee', 'Tatianna', 'Pandora Boxx', 'Jessica Wild', 
 		'Sahara Davenport', 'Morgan McMichaels', 'Sonique', 'Mystique Summers Madison',
 		'Nicole Paige Brooks', 'Shangela'],
@@ -73,9 +70,8 @@ function createAchievements () {
 
 	new Achievement (
 		1,
-		"Season 3", 
-		"Tyra won fair and square", 
-		"Guess all season three queens", 
+		"Heathers vs. Boogers", 
+		"Guess all season 3 queens", 
 		['Raja', 'Manila Luzon', 'Alexis Mateo', 'Yara Sofia', 'Shangela', 'Carmen Carrera',
 		'Delta Work', 'Stacy Lane Matthews', 'Mariah', 'India Ferrah', 'Mimi Imfurst', 'Phoenix', 
 		'Venus D-Lite'],
@@ -83,9 +79,8 @@ function createAchievements () {
 
 	new Achievement (
 		1,
-		"Season 4", 
-		" :)", 
-		"Guess all season four queens", 
+		"What did Willam do?", 
+		"Guess all season 4 queens", 
 		['Jiggly', 'The Princess', 'Dida Ritz', 'Madame Laqueer', 'Kenya Michaels', 
 		'Dida Ritz', 'Willam', 'Jiggly Caliente', 'Milan', 'Madame Laqueer', 'The Princess',
 		'Lashauwn Beyond', 'Alisa Summers'],
@@ -93,9 +88,8 @@ function createAchievements () {
 
 	new Achievement (
 		1,
-		"Season 5", 
-		" :)", 
-		"Guess all season five queens", 
+		"Smells like trout", 
+		"Guess all season 5 queens", 
 		['Jinkx', 'Alaska', 'Roxxxy', 'Detox', 'Coco Montrese', 'ALyssa Edwards',
 		'Ivy Winters', 'Jade Jolie', 'Lineysha Sparx', 'Honey Mahoganny', 'Vivianne Pinay',
 		'Monica Beverly Hillz', 'Serena Chacha', 'Penny Tration'],
@@ -103,9 +97,8 @@ function createAchievements () {
 
 	new Achievement (
 		1,
-		"Season 6", 
-		" :)", 
-		"Guess all season six queens", 
+		"Bianca and some other hos",  
+		"Guess all season 6 queens", 
 		['Bianca', 'Adore', 'Courtney', 'Darienne', 'Ben DeLaCreme', 'Joslyn Fox',
 		'Trinity K. Bonet', 'Laganja', 'Milk', 'Gia', 'April Carrion', 'Vivacious', 
 		'Magnolia', 'Kelly Mantle'],
@@ -113,9 +106,8 @@ function createAchievements () {
 
 	new Achievement (
 		1,
-		"Season 7", 
-		" :)", 
-		"Guess all season seven queens", 
+		"I DON'T WANNA HEAR ANY GODDAMN EXCUSES...ANYMORE!", 
+		"Guess all season 7 queens", 
 		['Violet Chachki', 'Ginger Minj', 'Pearl', 'Kennedy Davenport',
 		'Katya', 'Trixie Mattel', 'Miss Fame', 'Jaidynn Diore Fierce',
 		'Max Max', 'Kandy Ho', 'Mrs. Kasha Davis', 'Jasmine Masters',
@@ -124,9 +116,8 @@ function createAchievements () {
 
 	new Achievement (
 		1,
-		"Season 8", 
-		" :)", 
-		"Guess all season four queens", 
+		"Did somebody mention ART?", 
+		"Guess all season 8 queens", 
 		['Bob', 'Kim Chi', 'Naomi Smalls', 'Chi Chi DeVayne',
 		'Derrick Barry', 'Thorgy Thor', 'Robbie Turner',
 		'Acid Betty', 'Naysha Lopez', 'Cynthia Lee Fontaine',
@@ -136,23 +127,48 @@ function createAchievements () {
 
 	new Achievement (
 		1,
-		"Season 9", 
-		" :)", 
-		"Guess all season four queens", 
+		"Murder on the lipsync floor", 
+		"Guess all season 9 queens", 
 		['Sasha Velour', 'Peppermint', 'Shea Couleé', 'Trinity Taylor', 
 		'Alexis Michelle', "Nina Bo'nina Brown", 'Valentina',
 		'Farrah Moan', 'Aja', 'Cynthia Lee Fontaine', 'Eureka',
 		'Charlie Hides', 'Kimora Blac', 'Jaymes Mansfield']	,
 		'season9'),
 
+	new Achievement (
+		1,
+		"Raven was robbed pt. 2 (this time for real, though)",
+		"Guess all queens from All Stars 1",
+		['Pandora Boxxx', 'Jujubee', 'Shannel', 'Chad Michaels',
+		'Raven', 'Alexis Mateo', 'Yara Sofia', 'Latrice Royale',
+		'Manila Luzon', 'Nina Flowers', 'Tammie Brown', 'Mimi Imfurst'],
+		'allstars1'
+		)
+
+	new Achievement (
+		1,
+		"Rolaskatox strikes again",
+		"Guess all queens from All Stars 2",
+		["Alaska", "Detox", "Katya", "Roxxxy Andrews", "Alyssa Edwards", 
+		"Tatianna", "Phi Phi O'Hara", "Ginger Minj", "Adore Delano", 
+		"Coco Montrese"],
+		'allstars2'
+		)
+
+
 
 	//// TYPE 2
 	new Achievement (
 		2,
-		"Shipping Queen",
-		"Jinkx + Ivy = RPDR OTP",
+		"RPDR OTP",
 		"Guess Ivy and Jinkx in succession",
 		['Jinkx', 'Ivy winters']),
+
+	new Achievement (
+		2,
+		"Rolaskatox",
+		"Guess Roxxxy, Alaska and Detox in succession",
+		['Roxxxy', 'Alaska', 'Detox']),
 
 	new Achievement (
 		1,
