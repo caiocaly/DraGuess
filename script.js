@@ -205,9 +205,9 @@ function checkEmptyMessage (){
 	console.log(x);
 }
 
-function snackbar() {
-	// como editar oc onteudo do snackbar?
+function snackbar(content) {
     // Get the snackbar DIV
+    document.getElementById("snackbar").innerHTML = '<i>' + content + '</i> unlocked';
     var x = document.getElementById("snackbar")
 
     // Add the "show" class to DIV

@@ -41,12 +41,28 @@ function checkAchievements () {
 		if (item.achieved === false) { // só verifica achievements ainda não alcançados
 			for (i = 0; i < item.condition.length; i++ ) {
 				if (target.indexOf(item.condition[i]) === -1) { break 
-				} else if (i === (item.condition.length - 1)) {	item.achieved = true };
+				} else if (i === (item.condition.length - 1)) {	
+					item.achieved = true };
 			}
-			if (item.achieved === true) {addAchievement(item)};
+			if (item.achieved === true) {
+				addAchievement(item)
+				snackbar(item.title)};
 		} //fim do if
 	}); //fim do  foreach e de sua função
 } //fim da função
+
+function addAchievement (achievement) {
+	document.getElementById('achievements').innerHTML +=
+	`<div class="achievementBlock">
+		<div class="achievementImage">
+			<img src="${achievement.source}">
+		</div>
+		<div class="achievementContent">
+			<p class="achievementTitle">${achievement.title}</p>
+			<p class="achievementDescription"> ${achievement.subtitle} </p>
+		</div>
+	</div>`
+}
 
 
 function createAchievements () {
@@ -207,19 +223,13 @@ function createAchievements () {
 		"You're a champion, greatest of them all",
 		"Guess all queens",
 		[]
-		)
+		),
+
+	new Achievement (
+		1,
+		"QUANTOS ANOS DE CARREIRA, MEU BEM?",
+		"Guess Alisa Summers, Venus D-lite and Penny Tration.",
+		['Penny Tration', 'Venus D-Lite', 'Alisa Summers'])
 ]
 }
 
-function addAchievement (achievement) {
-	document.getElementById('achievements').innerHTML +=
-	`<div class="achievementBlock">
-		<div class="achievementImage">
-			<img src="${achievement.source}">
-		</div>
-		<div class="achievementContent">
-			<p class="achievementTitle">${achievement.title}</p>
-			<p class="achievementDescription"> ${achievement.subtitle} </p>
-		</div>
-	</div>`
-}
