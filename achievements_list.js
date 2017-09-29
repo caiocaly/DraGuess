@@ -228,8 +228,20 @@ function createAchievements () {
 	new Achievement (
 		1,
 		"QUANTOS ANOS DE CARREIRA, MEU BEM?",
-		"Guess Alisa Summers, Venus D-lite and Penny Tration.",
-		['Penny Tration', 'Venus D-Lite', 'Alisa Summers'])
+		"Guess the 3 most obscure and forgotten 	queens.",
+		['Penny Tration', 'Venus D-Lite', 'Alisa Summers']),
+
+	new Achievement (
+		1,
+		"I will NOT survive",
+		"Guess all the queens who took part in a shameful in double eliminations",
+		['Dax', 'Honey Mahoganny', 'Vivianne Pinay', 'Laila McQueen']),
+
+	new Achievement (
+		1,
+		"Shantay YOU ALL STAY",
+		'Guess all queens that impressed Ru in a lip sync and made him not eliminate anyone',
+		['Alyssa Edwards', 'Tatianna', 'Roxxxy', 'Sasha Velour', 'Trinity Taylor', 'Peppermint', 'Shea'])
 ]
 }
 

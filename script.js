@@ -1,4 +1,4 @@
-var version = 2.4;
+var version = 2.5;
 var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada
 var listOfGuessedIndexes = [];
 var achievementsList = [];
