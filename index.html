@@ -26,39 +26,39 @@
 	<meta property="og:url" content="http://caiocaly.github.io/totalrucall/">
 	<meta property="og:type" content="games.plays">
 
-
 </head>
 
-<body onload="start()">
+<body onload="start(1)">
 	<div id="mainBox" class="main">
 		<div id="results"></div>
 		<div id="input">
 			<p id="sub"></p>	
 			<div id="timer"></div>
 			<input id="textBox" type="text" onkeypress ="keyPressed(event)" onclick="clearInput()">
-			<button onclick="checkAnswer()">Submit</button>
+			<button id="submitButton" onclick="checkAnswer()"></button>
 			<p id="feedback"></p>
 		</div> 
 	</div>
 		
 	<div id="answers" class='main'>
-		<h2> Guessed answers: </h2>
+		<h2 id="guessedTitle"></h2>
 		<p id="answerCounter"></p>
 		<p id="guessedAnswers"></p>
 	</div>
 
 	<div id="achievements" class='main'>
-				<h2> Achievements: </h2>
-
+		<h2 id="achievementsTitle"> </h2>
 	</div>
 
 	<div id = "credits" class='main'>
 	<p class="additionalInfo" id="version" class="clickable"></p>
 	<p class="additionalInfo"> by <a class="clickable" href="https://caiocaly.github.io/"><strong>caio caly</strong></p>
 	</div>
+	<script type="text/javascript" src="setup.js"></script>
 	<script type="text/javascript" src="answers_list.js"></script>
+	<script type="text/javascript" src="achievements_list.js"></script>
+	<script type="text/javascript" src="localization.js"></script>
 	<script type="text/javascript" src="script.js"></script>
-		<script type="text/javascript" src="achievements_list.js"></script>
 
 
 <!-- The actual snackbar -->

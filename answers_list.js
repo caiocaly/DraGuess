@@ -1,9 +1,11 @@
 var correctAnswers = [
 	{name: ['Acid Betty', 'acid beth'],
-	correctMessage: 'No need to adjust your TV sets... This acid trip is all real...'},
+	correctMessage: 'No need to adjust your TV sets... This acid trip is all real...',
+	season: 8},
 
 	{name: ['Adore Delano', 'Adore'],
-	correctMessage:'Party!'},
+	correctMessage:'Party!',
+	season: 6},
 
 	{name: ["Akashia", "Akasha"],
 	correctMessage: "Serving trip and fall realness."},
@@ -131,7 +133,7 @@ var correctAnswers = [
 	correctMessage: 'Drag Queen and Beyoncé impersonator'},
 
 	{name: ['Kim Chi'],
-	correctMessage: "I came to DESTROY EVERYONE, with my make-up."},
+	correctMessage: "I came to DESTROY EVERYONE.... with my make-up."},
 
 	{name: ['Laganja Estranja', 'Laganja'],
 	correctMessage:"COME ON SEASON 6, TIME TO GET SICKENING"},
@@ -146,7 +148,7 @@ var correctAnswers = [
 	correctMessage: "THE SHADE OF IT ALL"},
 
 	{name: ['Lineysha Sparks', 'Linaysha Sparks', 'Lineisha Sparks', 'Lineysha'],
-	correctMessage: "Oh my gosh is one dollar guys"},
+	correctMessage: "Oh my gosh is one hundred dollars guys"},
 
 	{name: ['Madame LaQueer'],
 	correctMessage: 'Eeeeeeeeeew'},
@@ -353,9 +355,10 @@ var correctAnswers = [
 	correctMessage: 'I CALL SHADE'}
 ];
 
-function idThisCrap (array) {
+	function indexArray (array) {
 	for (i = 0; i < array.length; i++){
 		array[i].id = i;
 	}
 	}
 
+	indexArray(correctAnswers);

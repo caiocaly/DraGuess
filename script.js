@@ -1,42 +1,10 @@
-var version = 2.5;
-var guessedAnswers =[]; //array que vai armazenar as respostas que já foram acertada
-var listOfGuessedIndexes = [];
-var achievementsList = [];
-var timerStarted = false; //controla o começo do timer
 var total = correctAnswers.length;
-var timeLimit = { //tempo disponível
-	minutes: 5,
-	seconds: 0,
-	hurryUp: 30, //quando o timer vai começar a piscar
-	}
 
-function callPatchNotes (){
-	var patchNotes = 
-	`Created by Caio Caly.
-	Version ${version}
-	Special thanks to Bruno Luvizotto`;
-	alert(patchNotes);
-}
-
-function write(id, content){
-	document.getElementById(id).innerHTML = content;
-}
-
-function start() {	
-	idThisCrap(correctAnswers);
-	createAchievements();
-	updateCounter();
-	document.getElementById('textBox').value = "Type then press enter";
-	write('sub', `How many RPDR contestants can you name in only ${timeLimit.minutes} minutes?`);
-	write('version', `<strong><span class="clickable" onclick="callPatchNotes()">Ver. ${version}, </strong></span>`);
-	checkEmptyMessage();
-	console.log("Guessed indexes: " + listOfGuessedIndexes);
-	}
 
 function updateCounter() { //ela atualiza um contador de respostas certas x quantas faltam
 	let toGo = correctAnswers.length; // # respostas que falta acertar
 	let guessed = guessedAnswers.length; //# respostas acertadass
-	let countResult = `${guessed} guessed, ${toGo} to go.`; //texto que vai na tela
+	let countResult = (text.remainingAnswers[language].replace("_guessed", guessed)).replace("_togo", toGo);
 	write('answerCounter', countResult);
 	}
 
@@ -57,7 +25,8 @@ function checkAnswer () { //essa função verifica se a resposta está certa
 				if (correctAnswers[i].correctMessage) {
 					feedbackTxt = correctAnswers[i].correctMessage;
 				} else {
-					feedbackTxt = "right";
+					let rndNum = random(text.genericCorrectMessage[language].length);
+					feedbackTxt = text.genericCorrectMessage[language][rndNum];
 				}
 				transferDrag(i);
 			}
@@ -68,12 +37,17 @@ function checkAnswer () { //essa função verifica se a resposta está certa
 			for (j = 0; j < guessedAnswers[i].name.length; j++){
 				let answerBeingChecked = normalize(guessedAnswers[i].name[j]);
 					if (guess == answerBeingChecked){
-					repeatedName = guessedAnswers[i].name[j];
+					repeatedName = guessedAnswers[i].name[0];
 					var isRepeated = true;
 				}
 			}
 		}
-		isRepeated ? feedbackTxt= `You already guessed ${repeatedName}` : feedbackTxt = 'Incorrect answer';
+		if (isRepeated === true) {
+			feedbackTxt = text.alreadyGuessed[language] + repeatedName;
+		} else {
+			x = text.incorrectAnswerFeedback[language];
+			feedbackTxt =  x[random(x.length)];
+		}
 	}
 	updateCounter();
 	let feedbackColor;
@@ -123,7 +97,7 @@ function timer(){ // conta o tempo
   timer = setInterval(function(){
 	  min >= 10? minString = min : minString = "0" + min; 
 	  sec >= 10? secString = sec : secString = "0" + sec;
-	  document.getElementById('timer').innerHTML = `Time left: ${minString}:${secString}`;
+	  document.getElementById('timer').innerHTML = text.timeLeft[language] + minString+ ":" + secString;
 	  if( min == 0 && sec ==0) { 
 	      clearInterval(timer);
 	      clearInterval(blink);
@@ -149,37 +123,39 @@ function endGame() {
 	let read = "";
 	document.getElementById('mainBox').innerHTML ="";
 	let guessed = guessedAnswers.length;
+	let endMsg = text.endGameMessages[language];
 	switch (true) {
 		case (score == total):
-			read = "Parabéns Junior! ;)"
+			read = endMsg[0]
 			break;
 		case (score> 80):
-			read = "COME THROUGH MAMA! You're a champion!!! How can you even type so fast?"
+			read = endMsg[1]
 			break;
 		case (score >60):
-			read = "YASSS QUEEN! Impressive memory!";
+			read = endMsg[2]
 			break;
 		case (score >40):
-			read = "Excellent!"
+			read = endMsg[3]
 			break;
 		case (score >20):
-			read = "Nice job, you remember quite a few.";
+			read = endMsg[4]
 			break;
 		case (score >10):
-			read = "DO you even like RPDR? (That stands for RuPaul's Drag Race, in case you don't know)";
+			read = endMsg[5]
 			break;
 		case (score > 0):
-			read = "Tell me honestly: did you ever watch the show?";
+			read = endMsg[6]
 			break;
 		default:
-			read = "WHAT? Do you even know what a drag queen is?";
+			read = endMsg[7]
 			break;
 	}
 
+	let resultado = text.result[language];
 	document.getElementById('mainBox').innerHTML += `
 		<h2> ${read} </h2>
-		<h3> You got ${score} out of ${total} </h3>
-		<button onclick="reload()"> Try again? </button>`;
+		<h3> ${resultado[0]} ${score} ${resultado[1]} ${total} </h3>
+		<button onclick="reload()"> ${text.tryAgain[language]} </button>`;
 }
 
 function timerBlink(){
@@ -194,15 +170,6 @@ function timerBlink(){
 		}, 500);
 }
 
-function checkEmptyMessage (){
-	let x =[];
-	for (i=0; i < correctAnswers.length; i++){
-		if (correctAnswers[i].correctMessage == undefined){
-		x.push(correctAnswers[i].name[0]);	
-		}
-	}
-	console.log(x);
-}
 
 function snackbar(content) {
     // Get the snackbar DIV
@@ -214,4 +181,9 @@ function snackbar(content) {
 
     // After 3 seconds, remove the show class from DIV
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+
+function write(id, content){
+	document.getElementById(id).innerHTML = content;
 }
