@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="main.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link href="assets/configs/favicon2.png?rand=12345" type="image/x-icon" rel="icon" >
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106922956-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+  gtag('config', 'UA-106922956-1');
+</script>
+
+	<title>Total RuCall!</title>
+
+	<meta property="og:site_name" content="Total RuCall!!"/> <!-- site name -->
+	<meta property="og:description" content="How many RPDR contestants can you remember in 5 minutes?"/>
+	<meta property="og:image" content="http:/assets/configs/rucall_thumbnail.png">
+	<meta property="og:image:width" content="365" />
+	<meta property="og:image:height" content="365" />
+	<meta property="og:url" content="http://caiocaly.github.io/totalrucall/">
+	<meta property="og:type" content="games.plays">
+
+</head>
+
+<body onload="start(0)">
+	<div id="mainBox" class="main">
+		<div id="results"></div>
+		<div id="input">
+			<p id="sub"></p>	
+			<div id="timer"></div>
+			<input id="textBox" type="text" onkeypress ="keyPressed(event)" onclick="clearInput()">
+			<button id="submitButton" onclick="checkAnswer()"></button>
+			<p id="feedback"></p>
+		</div> 
+	</div>
+		
+	<div id="answers" class='main'>
+		<h2 id="guessedTitle"></h2>
+		<p id="answerCounter"></p>
+		<p id="guessedAnswers"></p>
+	</div>
+
+	<div id="achievements" class='main'>
+		<h2 id="achievementsTitle"> </h2>
+	</div>
+
+	<div id = "credits" class='main'>
+	<p class="additionalInfo" id="version" class="clickable"></p>
+	<p class="additionalInfo"> by <a class="clickable" href="https://caiocaly.github.io/"><strong>caio caly</strong></p>
+	</div>
+	<script type="text/javascript" src="setup.js"></script>
+	<script type="text/javascript" src="answers_list.js"></script>
+	<script type="text/javascript" src="achievements_list.js"></script>
+	<script type="text/javascript" src="localization.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+
+<!-- The actual snackbar -->
+<div id="snackbar"></div>
+
+</body>
+</html>
+
