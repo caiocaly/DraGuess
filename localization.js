@@ -5,7 +5,7 @@ var text = {
 
 	type:  [
 	`Type then press "enter"`,
-	`Digite e aperte enter`],
+	`Digite um nome e aperte enter`],
 
 	guessedTitle: [
 	`Guessed answers: `,
